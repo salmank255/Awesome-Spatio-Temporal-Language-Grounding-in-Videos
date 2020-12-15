@@ -101,6 +101,9 @@ Markdown format:
 ### 2020
 
 * [Temporally Grounding Language Queries in Videos by Contextual Boundary-aware Prediction](https://arxiv.org/abs/1909.05010) - Jingwen Wang et al, `AAAI 2020`. [[code]](https://github.com/JaywongWang/CBP)
+* [Learning 2D Temporal Localization Networks for Moment Localization with Natural Language](https://arxiv.org/abs/1912.03590) - Songyang Zhang et al, `AAAI 2020`. [[code1]](https://github.com/microsoft/2D-TAN)[[code2]](https://github.com/ChenJoya/2dtan)
+* [Multi-Scale 2D Temporal Adjacent Networks for Moment Localization with Natural Language](https://arxiv.org/pdf/2012.02646.pdf) - Songyang Zhang et al, `TPAMI submission`.
+
 
 
 
