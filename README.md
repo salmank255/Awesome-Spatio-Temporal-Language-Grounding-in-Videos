@@ -115,6 +115,11 @@ Markdown format:
 - [DiDeMo](<https://github.com/LisaAnne/LocalizingMoments>)
 - [TACoS](http://www.coli.uni-saarland.de/projects/smile/page.php?id=software)
 
+## Dataset C3D Features
+- [ActivityNet Captions](http://activity-net.org/challenges/2016/download.html)
+- [TACos](https://drive.google.com/file/d/1Y53pJebaZdwenbHOpj-yIURSk_cit1OI/view?usp=sharing), shared by [ChenJoya_2dtan](https://github.com/ChenJoya/2dtan/blob/master/DATASET.md)
+
+
 ## Benchmark Results
 
 #### ActivityNet Captions
