@@ -104,7 +104,9 @@ Markdown format:
 * [Learning 2D Temporal Localization Networks for Moment Localization with Natural Language](https://arxiv.org/abs/1912.03590) - Songyang Zhang et al, `AAAI 2020`. [[code1]](https://github.com/microsoft/2D-TAN)[[code2]](https://github.com/ChenJoya/2dtan)
 * [Multi-Scale 2D Temporal Adjacent Networks for Moment Localization with Natural Language](https://arxiv.org/pdf/2012.02646.pdf) - Songyang Zhang et al, `TPAMI submission`.
 * [Jointly Cross- and Self-Modal Graph Attention Network for Query-Based Moment Localization](https://dl.acm.org/doi/pdf/10.1145/3394171.3414026) - Daizong Liu et al, `ACM MM`. [[code]](https://github.com/liudaizong/CSMGAN)
-
+* [Weakly-Supervised Video Moment Retrieval via Semantic Completion Network](https://ojs.aaai.org/index.php/AAAI/article/view/6820) - Zhijie Lin et al, `AAAI 2020`.
+* [Look Closer to Ground Better: Weakly-Supervised Temporal Grounding of Sentence in Video](https://arxiv.org/pdf/2001.09308.pdf) - Zhenfang Chen et al, `arXiv`.
+* [VLANet: Video-Language Alignment Network for Weakly-Supervised Video Moment Retrieval](https://arxiv.org/pdf/2008.10238.pdf) - Minuk Ma et al, `ECCV 2020`.
 
 
 
