@@ -16,7 +16,7 @@ A curated list of grounding natural language in video also referred as Single Vi
 
 ## Table of Contents
 
-- [01 - Dataset](#01%20-%20Dataset)
+- [01 - Datasets](#01%20-%20Datasets)
 - [02 - Benchmark Results](#02%20-%20Benchmark%20Results)
 - [03 - Papers](#03%20-%20Papers)
   - [Analysis](#Analysis)
@@ -24,7 +24,7 @@ A curated list of grounding natural language in video also referred as Single Vi
 
 <br/><br/>
 
-# 01 - Dataset
+# 01 - Datasets
   
 |Dataset | Features | Train | Val | Test | Vocab. Size |
 |---     | :---:      | :---:   | :---: | :---:  | :---:|
@@ -37,35 +37,137 @@ A curated list of grounding natural language in video also referred as Single Vi
 <br/><br/>
 
 # 02 - Benchmark Results
-## Evaluation metric: Recall@k for IoU=m ([link](https://medium.com/qloo/popular-evaluation-metrics-in-recommender-systems-explained-324ff2fb427d)).
+* Evaluation metric: Recall@k for IoU=m ([link](https://medium.com/qloo/popular-evaluation-metrics-in-recommender-systems-explained-324ff2fb427d)).
+
+* NOTE: For Activitynet-Captions, val1 / val2 or a combination of the two splits is used for evaluation. The most common choice is to use val1 as a validation set and val2 as a testing set. This is necessary as the official test set is withheld for competitions purposes. 
+
+Methods can be classified in:
+* FS: Fully supervised
+* WS: Weakly supervised
+* RL: Reinforcement Learning
+
 <br/><br/>
 
-## ActivityNet Captions (val 1)
+### ActivityNet Captions (val 1)
 
-| Models | Features | R@1<br />IoU0.1 | R@1<br />IoU0.3 | R@1<br />IoU0.5 | R@1<br />IoU0.7 | R@5<br />IoU0.1 | R@5<br />IoU0.3 | R@5<br />IoU0.5 | R@5<br />IoU0.7 | Method |
+| Models | Features | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| :---   | :---:  | :---:  | :---:  | :---:  | :---: | :---:  | :---: | :---:  | 
+| ACRN      [[12]](#2018)| C3D | 31.29 | 16.17 |   -   |   -   |   -   |   -   |
+| A2C       [[19]](#2019)| C3D |   -   | 36.90 |   -   |   -   |   -   |   -   |
+| DEBUG     [[27]](#2019)| C3D | 55.91 | 39.72 |   -   |   -   |   -   |   -   |
+| ExCL      [[28]](#2019)| I3D | 63.00 | 43.60 | 23.60 |   -   |   -   |   -   |
+| TSP-PRL   [[37]](#2020)| C3D | 56.08 | 38.76 |   -   |   -   |   -   |   -   |
+| GDP       [[40]](#2020)| C3D | 56.17 | 39.27 |   -   |   -   |   -   |   -   |
+| DRN       [[41]](#2020)| C3D |   -   | 42.49 | 22.25 |   -   | 71.85 | 45.96 |
+| VSLNet    [[48]](#2020)| I3D | 63.16 | 43.22 | 26.16 |   -   |   -   |   -   | 
+
+<br/><br/>
+
+### ActivityNet Captions (val 2)
+
+| Models | Features | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| :---   | :---:  | :---:  | :---:  | :---:  | :---: | :---:  | :---: | :---:  | 
+| TGN [[10]](#2018) | C3D<br/>VGG16<br/>Inception-V4 | 43.81<br/>42.24<br/>45.51 | 27.93<br/>23.90<br/>28.47 | 11.86<br/>-<br/>- | 54.56<br/>51.82<br/>57.32 | 44.20<br/> 40.17<br/>43.33 | 24.84<br/>-<br/>- |
+| CMIN          [[29]](#2020) | C3D | 64.41 | 44.62 | 24.48 | 82.39 | 69.66 | 52.96 | FS
+| 2D-TAN (pool) [[38]](#2020) | C3D | 59.45 | 44.51 | 26.54 | 85.53 | 77.13 | 61.96 | FS
+| 2D-TAN (conv) [[38]](#2020) | C3D | 58.75 | 44.05 | 27.38 | 85.65 | 76.65 | 62.26 | FS
+| DRN           [[41]](#2020) | C3D |   -   | 45.45 | 24.36 |   -   | 77.97 | 50.30 | FS
+| HVTG          [[45]](#2020) | OBJ | 57.60 | 40.15 | 18.27 |   -   |   -   |   -   | FS
+| PMI           [[46]](#2020) | C3D | 59.69 | 38.28 | 17.83 |   -   |   -   |   -   | FS
+| DPIN          [[54]](#2020) | C3D | 62.40 | 47.27 | 28.31 | 87.52 | 77.45 | 60.03 |
+| FIAN          [[56]](#2020) | C3D | 64.10 | 47.90 | 29.81 | 87.59 | 77.64 | 59.66 |
+| CSMGAN        [[57]](#2020) | C3D | 68.52 | 49.11 | 29.15 | 87.68 | 77.43 | 59.63 |
+| SMRN          [[59]](#2020) | C3D |   -   | 42.97 | 26.79 |   -   | 76.46 | 60.51 |
+| VLG-Net       [[68]](#2020) | C3D |   -   | 46.32 | 29.82 |   -   | 77.15 | 63.33 | FS
+
+<br/><br/>
+
+### ActivityNet Captions (val 1 + val2)
+
+| Models | Features | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| :---   | :---:  | :---:  | :---:  | :---:  | :---: | :---:  | :---: | :---:  |
+| QSPN      [[17]](#2019)| C3D | 45.30 | 27.70 | 13.60 | 75.70 | 59.20 | 38.3  |  
+| ABLR      [[20]](#2019)| C3D | 55.67 | 36.79 |   -   |   -   |   -   |   -   | RL
+| SCDM      [[25]](#2019)| C3D | 54.80 | 36.75 | 19.86 | 77.29 | 64.99 | 41.53 |
+| CBP       [[36]](#2020)| C3D | 54.30 | 35.76 | 17.80 | 77.63 | 65.89 | 46.20 | FS
+| LGI       [[43]](#2020)| C3D | 58.52 | 41.51 | 23.07 |   -   |   -   |   -   | FS
+| TripNet   [[47]](#2020)| C3D | 48.42 | 32.19 | 13.93 |   -   |   -   |   -   | RL
+| TMLGA     [[49]](#2020)| I3D | 51.28 | 33.04 | 19.26 |   -   |   -   |   -   |
+
+
+
+| Models | Features | R@1<br/>IoU0.1 | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@1<br/>IoU0.7 | R@5<br/>IoU0.1 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5 | R@5<br/>IoU0.7 | Method |
 | :--- | :---: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :----: |
 | MCN [[5]](#2017)        |  |   42.80   |    21.37    |    9.58     |      -      |      -      |      -      |      -      |      -      |   PB   |
 | CTRL [[6]](#2017)       |  |  49.09    |    28.70    |    14.0     |      -      |      -      |      -      |      -      |      -      |   PB   |
-| ACRN [[12]](#2018)      |  |  50.37    |    31.29    |    16.17    |      -      |      -      |      -      |      -      |      -      |   PB   |
-| QSPN [[17]](#2019)      |  |    -      |    45.3     |    27.7     |    13.6     |      -      |    75.7     |    59.2     |    38.3     |   PB   |
 | TGN [[10]](#2018)       |  |  70.06    |    45.51    |    28.47    |      -      |    79.10    |    57.32    |    44.20    |      -      |   PB   |
-| SCDM [[25]](#2019)      |  |    -      |    54.80    |    36.75    |    19.86    |      -      |    77.29    |    64.99    |    41.53    |   PB   |
-| CBP [[36]](#2020)       |  |    -      |    54.30    |    35.76    |    17.80    |      -      |    77.63    |    65.89    |    46.20    |   PB   |
-| TripNet&nbsp;[[48]](#2020)|  |    -      |    48.42    |    32.19    |    13.93    |      -      |      -      |      -      |      -      |   RL   |
-| ABLR [[20]](#2019)      |  |  73.30    |    55.67    |    36.79    |      -      |      -      |      -      |      -      |      -      |   RL   |
-| ExCL [[28]](#2019)      |  |   -       |    63.30    |    43.6     |    24.1     |      -      |      -      |      -      |      -      |   PF   |
-| TMLGA                   |  |  75.25    |    51.28    |    33.04    |    19.26    |      -      |      -      |      -      |      -      |   PF   |
-| WSDEC&nbsp;[[26]](#2019)|  |  62.7     |    42.0     |    23.3     |      -      |      -      |      -      |      -      |      -      |        |
-| WSLLN&nbsp;[[26]](#2019)|  |  75.4     |    42.8     |    22.7     |      -      |      -      |      -      |      -      |      -      |        |
-
+| WSDEC-W&nbsp;   [[26]](#2019)|  |  62.7     |    42.0     |    23.3     |      -      |      -      |      -      |      -      |      -      |        |
+| WSLLN&nbsp;    [[26]](#2019)|  |  75.4     |    42.8     |    22.7     |      -      |      -      |      -      |      -      |      -      |        |
+     
 
 <br/><br/>
 
-## Charades-STA
+### TACoS (test)
 
-| Models        | Features   | R@1<br />IoU0.3 | R@1<br />IoU0.5 | R@1<br />IoU0.7 | R@5<br />IoU0.3 | R@5<br />IoU0.5 | R@5<br />IoU0.7 |
-| :---          | :---:      | :---:           | :---:           | :---:           | :---:           | :---:           | :---:           |
-| CTRL          [[6]](#2017) |      C3D     |   -   | 23.63 | 8.89  |   -   | 58.92 | 29.52 |
+| Models | Features | R@1<br/>IoU0.1 | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.1 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| :---   | :---:  | :---:  | :---:  | :---:  | :---: | :---:  | :---: | :---:  | :---:  | :---:  |
+| CTRL          [[6]](#2017) |   C3D   | 24.32 | 18.32 | 13.30 |   -   | 48.73 | 36.69 | 25.42 |   -   | FS
+| TGN           [[10]](#2018)|   C3D   | 41.87 | 21.77 | 18.90 | 11.88 | 53.40 | 39.06 | 31.02 | 15.26 | FS
+| ACRN          [[12]](#2018)|   C3D   | 24.22 | 19.52 | 14.62 |   -   | 47.42 | 34.97 | 24.88 |   -   |
+| MCF           [[13]](#2019)|   C3D   | 25.84 | 18.64 | 12.53 |   -   | 52.96 | 37.13 | 24.73 |   -   |
+| ROLE          [[14]](#2018)|   C3D   | 20.37 | 15.38 |  9.94 |   -   | 45.45 | 31.17 | 20.13 |   -   |
+| VAL           [[15]](#2018)|   C3D   | 25.74 | 19.76 | 14.74 |   -   | 51.87 | 38.55 | 26.52 |   -   |
+| QSPN          [[17]](#2019)|   C3D   | 25.31 | 20.15 | 15.23 |   -   | 53.21 | 36.72 | 25.30 |   -   |
+| ABLR          [[20]](#2019)|   C3D   | 34.70 | 19.50 |  9.40 |   -   |   -   |   -   |   -   |   -   |
+| SAP           [[21]](#2019)|  VGG16  | 31.15 |   -   | 18.24 |   -   | 53.51 |   -   | 28.11 |   -   |
+| SMRL          [[24]](#2019)|  VGG16  | 26.51 | 20.25 | 15.95 |   -   | 50.01 | 38.47 | 27.84 |   -   | RL
+| SCDM          [[25]](#2019)|   C3D   |   -   | 26.11 | 21.17 |   -   |   -   | 40.16 | 32.18 |   -   |
+| DEBUG         [[27]](#2019)|   C3D   | 41.15 | 23.45 | 11.72 |   -   |   -   |   -   |   -   |   -   |
+| ExCL          [[28]](#2019)|   I3D   |   -   | 45.50 | 28.00 | 13.80 |   -   |   -   |   -   |   -   |
+| CMIN          [[29]](#2019)| C3D<br/>I3D | 36.88<br/>41.73 | 27.33<br/>32.35  | 19.57<br/>22.54  |-<br/>- | 64.93<br/>69.15 | 43.35<br/>50.75 | 28.53<br/>32.11 | -<br/>- | FS
+| SLTA          [[31]](#2019)|C3D+FRCNN | 23.13 | 17.07 | 11.92 |   -   | 46.52 | 32.90 | 20.86 |   -   |
+| ACL-K         [[32]](#2019)|   C3D    | 31.64 | 24.17 | 20.01 |   -   | 57.85 | 42.15 | 30.66 |   -   |
+| CBP           [[36]](#2020)|   C3D    |   -   | 27.31 | 24.79 | 19.10 |   -   | 43.64 | 37.40 | 25.59 |
+| 2D-TAN (Pool) [[38]](#2020)|   C3D    | 47.59 | 37.29 | 25.32 |   -   | 70.31 | 57.81 | 45.04 |   -   | FS
+| 2D-TAN convl) [[38]](#2020)|   C3D    | 46.44 | 35.22 | 25.19 |   -   | 74.43 | 56.94 | 44.21 |   -   | FS
+| GDP           [[40]](#2020)|   C3D    | 39.68 | 24.14 | 13.50 |   -   |   -   |   -   |   -   |   -   |
+| DRN           [[41]](#2020)|   C3D    |   -   |   -   | 23.17 |   -   |   -   |   -   | 33.36 |   -   | FS
+| TripNet       [[47]](#2020)|   C3D    |   -   | 23.95 | 19.17 | 9.52  |   -   |   -   |   -   |   -   | RL
+| VSLNet        [[48]](#2020)|   I3D    | 29.61 | 24.27 | 20.03 |   -   |   -   |   -   |   -   |   -   |
+| TMLGA         [[49]](#2020)|   I3D    |   -   | 24.54 | 21.65 | 16.46 |   -   |   -   |   -   |   -   |
+| DPIN          [[54]](#2020)|   C3D    | 59.04 | 46.74 | 32.92 |   -   | 75.78 | 62.16 | 50.26 |   -   | 
+| FIAN          [[56]](#2020)|   C3D    | 39.55 | 33.87 | 28.58 |   -   | 56.14 | 47.76 | 39.16 |   -   | 
+| CSMGAN        [[57]](#2020)|   C3D    | 42.74 | 33.90 | 27.09 |   -   | 68.97 | 53.98 | 41.22 |   -   | 
+| SMRN          [[59]](#2020)|   C3D    | 50.44 | 42.49 | 32.07 |   -   | 77.28 | 66.63 | 52.84 |   -   | 
+| LGN           [[65]](#2020)|   C3D    | 52.46 | 41.71 | 30.57 |   -   | 76.86 | 63.06 | 50.76 |   -   | FS
+| VLG-Net       [[68]](#2020)|   C3D    | 57.21 | 45.46 | 34.19 |   -   | 81.80 | 70.38 | 56.56 |   -   | FS 
+
+<br/><br/>
+
+### DiDeMo (test)
+
+| Models | Features | R@1<br/>IoU0.5 | R@1<br/>IoU0.7 | R@1<br/>IoU1.0 | R@5<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU1.0 | Method |
+| :---   | :---:    | :---:          | :---:          | :---:          | :---:          | :---:          | :---:          | :---:  |
+| MCN           [[5]](#2017) | VGG16<br/>Flow<br/>VGG16+Flow<br/>VGG16+Flow+TEF     |   -<br/>-<br/>-<br/>-   | -<br/>-<br/>-<br/>- | 13.10<br/>18.35<br/>19.88<br/>28.10  |   -<br/>-<br/>-<br/>-   | -<br/>-<br/>-<br/>- | 44.82<br/>56.25<br/>62.39<br/>78.21 |  FS
+| TMN           [[9]](#2018) | VGG16<br/>Flow<br/>VGG16+Flow|   -<br/>-<br/>   | -<br/>-<br/>- | 18.71<br/>19.90<br/>22.92  | -<br/>-<br/>- | -<br/>-<br/>- | 72.97<br/>75.14<br/>76.08 | FS
+| TGN           [[10]](#2018)| VGG16<br/>Flow<br/>VGG16+Flow|   -<br/>-<br/>   | -<br/>-<br/>- | 24.28<br/>27.52<br/>28.23  | -<br/>-<br/>- | -<br/>-<br/>- | 71.43<br/>76.94<br/>79.26 | FS
+| ACRN          [[12]](#2018)|    VGG16    | 27.44 | 16.65 |   -   | 69.43 | 29.45 |   -   | FS
+| ROLE          [[14]](#2018)|    VGG16    | 29.40 | 15.68 |   -   | 70.72 | 33.08 |   -   | FS
+| MAN           [[22]](#2019)|     TAN     |   -   |   -   | 27.02 |   -   |   -   | 81.70 | FS
+| TGA           [[23]](#2019)|  RGB+Flow   |   -   |   -   | 12.19 |   -   |   -   | 39.74 | WS
+| SMRL          [[24]](#2019)| VGG16+FRCNN |   -   |   -   | 31.06 |   -   |   -   | 80.45 | RL
+| WSLLN         [[26]](#2019)| VGG16<br/>Flow|-<br/>-|-<br/>-| 19.40<br/>18.40  |-<br/>-|-<br/>-| 53.10<br/>54.40 | WS
+| SLTA          [[31]](#2019)| VGG16+FRCNN | 30.92 | 17.16 |   -   | 70.18 | 33.87 |   -   | FS
+| RTBPN         [[51]](#2020)| VGG16<br/>Flow<br/>VGG16+Flow|   -<br/>-<br/>   | -<br/>-<br/>- | 20.38<br/>20.52<br/>20.79  | -<br/>-<br/>- | -<br/>-<br/>- | 55.88<br/>57.72<br/>60.26 | WS 
+| VLG-Net       [[68]](#2020)|    VGG16    | 33.35 | 25.57 | 25.57 | 88.86 | 71.72 | 71.65 | FS
+
+<br/><br/>
+
+### Charades-STA (test)
+
+| Models        | Features   | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@1<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5 | R@5<br/>IoU0.7 | Method |
+| :---          | :---:      | :---:          | :---:          | :---:          | :---:          | :---:          | :---:          | :---:  |
+| CTRL          [[6]](#2017) |      C3D     |   -   | 23.63 | 8.89  |   -   | 58.92 | 29.52 | FS
 | ACRN          [[12]](#2018)|      C3D     |   -   | 20.26 | 7.64  |   -   | 71.99 | 27.79 |
 | ROLE          [[14]](#2018)|      C3D     |   -   | 21.74 | 7.82  |   -   | 70.37 | 30.06 |
 | VAL           [[15]](#2018)|      C3D     |   -   | 23.12 | 9.16  |   -   | 61.26 | 27.98 |
@@ -73,79 +175,35 @@ A curated list of grounding natural language in video also referred as Single Vi
 | QSPN          [[17]](#2019)|      C3D     | 54.70 | 35.60 | 15.80 | 95.80 | 79.40 | 45.40 |
 | ABLR          [[20]](#2019)|      C3D     |   -   | 24.36 | 9.01  |   -   |   -   |   -   |
 | SAP           [[21]](#2019)|     VGG16    |   -   | 27.42 | 13.36 |   -   | 66.37 | 38.15 |
-| MAN           [[22]](#2019)|     VGG16    |   -   | 41.24 | 20.54 |   -   | 83.21 | 51.85 |
-| MAN           [[22]](#2019)|      I3D     |   -   | 46.53 | 22.72 |   -   | 86.23 | 53.72 |
+| MAN           [[22]](#2019)|VGG16<br/>I3D | -<br/>- | 41.24<br/>46.53 | 20.54<br/>22.72 | -<br/>- | 83.21<br/>86.23 | 51.85<br/>53.72 |
 | TGA           [[23]](#2019)|      ---     | 32.14 | 19.94 | 8.84  | 56.58 | 65.52 | 33.51 | WS |
-| SMRL          [[24]](#2019)|     VGG16    |   -   | 24.36 | 11.17 |   -   | 61.25 | 32.08 |
+| SMRL          [[24]](#2019)|     VGG16    |   -   | 24.36 | 11.17 |   -   | 61.25 | 32.08 | RL
 | SCDM          [[25]](#2019)|      I3D     |   -   | 54.44 | 33.43 |   -   | 74.43 | 58.08 |
 | DEBUG         [[27]](#2019)|      C3D     |   -   | 37.39 | 17.69 |   -   |   -   |   -   |
 | ExCL          [[28]](#2019)|      I3D     | 65.10 | 44.10 | 22.40 |   -   |   -   |   -   |
-| SLTA          [[31]](#2019)|C3D+<br/>FRCNN|   -   | 22.81 |  8.25 |   -   | 72.39 | 31.46 |
+| SLTA          [[31]](#2019)|   C3D+FRCNN  |   -   | 22.81 |  8.25 |   -   | 72.39 | 31.46 |
 | ACL           [[32]](#2019)|      C3D     |   -   | 26.47 | 11.23 |   -   | 61.51 | 33.23 |
 | ACL-K         [[32]](#2019)|      C3D     |   -   | 30.48 | 12.20 |   -   | 64.84 | 35.13 |
-| CBP           [[36]](#2020)|      C3D     |   -   | 36.80 | 18.87 |   -   | 70.94 | 50.19 |
+| CBP           [[36]](#2020)|      C3D     |   -   | 36.80 | 18.87 |   -   | 70.94 | 50.19 | FS
 | TSP-PRL       [[37]](#2020)|      C3D     |   -   | 37.39 | 17.69 |   -   |   -   |   -   |
 | TSP-PRL       [[37]](#2020)|  Two Streams |   -   | 45.30 | 24.73 |   -   |   -   |   -   |
-| 2D-TAN (pool) [[38]](#2020)|     VGG16    |   -   | 39.70 | 23.31 |   -   | 80.32 | 51.26 |
-| 2D-TAN (conv) [[38]](#2020)|     VGG16    |   -   | 39.81 | 23.25 |   -   | 79.33 | 52.15 |
+| 2D-TAN (pool) [[38]](#2020)|     VGG16    |   -   | 39.70 | 23.31 |   -   | 80.32 | 51.26 | FS
+| 2D-TAN (conv) [[38]](#2020)|     VGG16    |   -   | 39.81 | 23.25 |   -   | 79.33 | 52.15 | FS
 | CTF           [[39]](#2020)|     ---      | 42.96 | 23.58 |  9.97 | 95.56 | 71.80 | 38.84 | WS
 | GDP           [[40]](#2020)|      C3D     |   -   | 39.47 | 18.49 |   -   |   -   |   -   |
-| DRN           [[41]](#2020)|     VGG16    |   -   | 42.90 | 23.68 |   -   | 87.80 | 54.87 |
-| DRN           [[41]](#2020)|      C3D     |   -   | 45.40 | 26.40 |   -   | 88.01 | 55.38 |
-| DRN           [[41]](#2020)|      I3D     |   -   | 53.09 | 31.75 |   -   | 89.06 | 60.05 |
-| LGI           [[43]](#2020)|      I3D     |   -   | 59.46 | 35.48 |   -   |   -   |   -   |
-| HVTG          [[45]](#2020)|     FRCNN    |   -   | 47.27 | 23.30 |   -   |   -   |   -   |
-| PMI           [[46]](#2020)|      C3D     |   -   | 39.73 | 19.27 |   -   |   -   |   -   |
-| TripNet       [[47]](#2020)|      C3D     | 51.33 | 38.29 | 16.07 |   -   |   -   |   -   |
+| DRN           [[41]](#2020)| VGG16<br/>C3D<br/>I3D    |   -<br/>-<br/>-   | 42.90<br/>45.40<br/>53.09 | 23.68<br/>26.40<br/>31.75 |   -<br/>-<br/>-   | 87.80<br/>88.01<br/>89.06 | 54.87<br/>55.38<br/>60.05 | FS
+| LGI           [[43]](#2020)|      I3D     |   -   | 59.46 | 35.48 |   -   |   -   |   -   | FS
+| HVTG          [[45]](#2020)|     FRCNN    |   -   | 47.27 | 23.30 |   -   |   -   |   -   | FS
+| PMI           [[46]](#2020)|      C3D     |   -   | 39.73 | 19.27 |   -   |   -   |   -   | FS
+| TripNet       [[47]](#2020)|      C3D     | 51.33 | 38.29 | 16.07 |   -   |   -   |   -   | RL
 | VSLNet        [[48]](#2020)|      I3D     |   -   | 54.19 | 35.22 |   -   |   -   |   -   |
 | TMLGA         [[49]](#2020)|      I3D     | 67.53 | 52.02 | 33.74 |   -   |   -   |   -   |
 | RTBPN         [[51]](#2020)|      C3D     | 60.04 | 32.36 | 13.24 | 97.48 | 71.85 | 41.18 | WS
-| AVMR          [[53]](#2020)|    ResNet    | 77.72 | 54.59 |   -   | 88.92 | 72.78 |   -   | WS
 | DPIN          [[54]](#2020)|     VGG16    |   -   | 47.98 | 26.96 |   -   | 85.53 | 55.00 |
 | FIAN          [[56]](#2020)|      I3D     |   -   | 58.55 | 37.72 |   -   | 87.80 | 63.52 |
 | WSTG          [[62]](#2020)|      ---     | 39.80 | 27.30 | 12.90 |   -   |   -   |   -   | WS
-| LGN           [[65]](#2020)|     VGG16    |   -   | 48.15 | 26.67 |   -   | 86.80 | 53.01 |
-							
-
-<br/><br/>
-
-## DiDeMo
-
-|                | R@1 IoU@0.1 | R@1 IoU@0.3 | R@1 IoU@0.5 | R@1 IoU@0.7 | R@5 IoU@0.1 | R@5 IoU@0.3 | R@5 IoU@0.5 | R@5 IoU@0.7 |
-| :--: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |
-|      TMN       |    22.92    |      -      |      -      |      -      |    76.08    |      -      |      -      |      -      |
-|      MCN       |    28.10    |      -      |      -      |      -      |    78.21    |      -      |      -      |      -      |
-|      TGN       |    28.23    |      -      |      -      |      -      |    79.26    |      -      |      -      |      -      |
-|      MAN       |    27.02    |      -      |      -      |      -      |    81.70    |      -      |      -      |      -      |
-| WSLLN (Weakly) |    19.4     |      -      |      -      |      -      |    54.4     |      -      |      -      |      -      |
-
-
-WSLLN [13] RGB 19.40 53.10 25.40
-RTBPN (our) RGB 20.38 55.88 26.53
-WSLLN [13] Flow 18.40 54.40 27.40
-RTBPN (our) Flow 20.52 57.72 30.54
-TGA [23] RGB+Flow 12.19 39.74 24.92
-RTBPN (our) RGB+Flow 20.79 60.26 29.81
-
-<br/><br/>
-
-## TACoS
-
-|         | R@1 IoU@0.1 | R@1 IoU@0.3 | R@1 IoU@0.5 | R@1 IoU@0.7 | R@5 IoU@0.1 | R@5 IoU@0.3 | R@5 IoU@0.5 | R@5 IoU@0.7 |
-| :-----: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | 
-|   MCN   |    2.62     |    1.64     |    1.25     |      -      |    2.88     |    1.82     |    1.01     |      -      | 
-|  CTRL   |    24.32    |    18.32    |    13.30    |      -      |    48.73    |    36.69    |    25.42    |      -      | 
-|   TGN   |    41.87    |    21.77    |    18.90    |      -      |    53.40    |    39.06    |    31.02    |      -      | 
-|  ACRN   |    24.22    |    19.52    |    14.62    |      -      |    47.42    |    34.97    |    24.88    |      -      |
-|  ACL-K  |    31.64    |    24.17    |    20.01    |      -      |    57.85    |    42.15    |    30.66    |      -      |
-|  SCDM   |      -      |    26.11    |    21.17    |      -      |      -      |    40.16    |    32.18    |      -      | 
-|   CBP   |      -      |    27.31    |    24.79    |    19.10    |      -      |    43.64    |    37.40    |    25.59    | 
-| TripNet |      -      |    23.95    |    19.17    |    9.52     |      -      |      -      |      -      |      -      | 
-|  SMRL   |    26.51    |    20.25    |    15.95    |      -      |    50.01    |    38.47    |    27.84    |      -      | 
-|  ABLR   |    34.7     |    19.5     |     9.4     |      -      |      -      |      -      |      -      |      -      | 
-|  ExCL   |      -      |    45.5     |    28.0     |    14.6     |      -      |      -      |      -      |      -      | 
-
-AVMR 93.20% 77.72% 54.59% 98.87% 88.92% 72.78% 89.77% 72.16% 49.13% 94.26% 83.37% 64.40%
+| LGN           [[65]](#2020)|     VGG16    |   -   | 48.15 | 26.67 |   -   | 86.80 | 53.01 | FS
+<!-- | AVMR          [[53]](#2020)|    ResNet    | 77.72 | 54.59 |   -   | 88.92 | 72.78 |   -   | WS -->
 
 <br/><br/>
 
@@ -156,11 +214,15 @@ Markdown format:
 * `ID` | `Model Acronym` | `Conference` | [Paper Name](link) | Author 1 et al |  [GitHub](link)
 ```
 
+<br/>
+
 ## Analysis papers
 |ID| Model | Venue | Title | Authors  | Code  |
 | :---: | :---: | :--- | --- | ---------- | :---: |
 |-  |`--`  | `BMVC 2020` | [Uncovering Hidden Challenges in Query-Based Video Moment Retrieval](https://arxiv.org/pdf/2009.00325.pdf) | Otani et al | 
 |-  |`--`  | `ArXiv 2020`  | [A Closer Look at Temporal Sentence Grounding in Videos: Datasets and Metrics](https://arxiv.org/pdf/2101.09028.pdf) | Yuan et al | [GitHub](https://github.com/yytzsy/grounding_changing_distribution)
+
+<br/>
 
 ## Early works
 |ID| Model | Venue | Title | Authors  | Code  |
@@ -170,6 +232,7 @@ Markdown format:
 |3|`--`  | `AAAI 2015`   |  [Jointly Modeling Deep Video and Compositional Text to Bridge Vision and Language in a Unified Framework](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9734) | Xu et al
 |4|`--`  |  `IJCAI 2016` | [Unsupervised Alignment of Actions in Video with Text Descriptions](https://pdfs.semanticscholar.org/5893/7d427ff36e1470b18120245148355047e4ea.pdf) |  Song et al
  
+ <br/>
 
 ## 2017
 
@@ -179,6 +242,7 @@ Markdown format:
 |6| `CTRL`  | `ICCV`  | [TALL: Temporal Activity Localization via Language Query](https://arxiv.org/abs/1705.02101)  | Gao et al | [GitHub](<https://github.com/jiyanggao/TALL>)  |
 |7| `--`    | `ArXiv` | [Where to Play: Retrieval of Video Segments using Natural-Language Queries](<https://arxiv.org/abs/1707.00251>) | Lee et al | 
 
+<br/>
 
 ## 2018
 
@@ -194,7 +258,7 @@ Markdown format:
 |15|`VAL`  | `PRCM`   | [VAL: Visual-attention action localizer](https://link.springer.com/content/pdf/10.1007%2F978-3-030-00767-6_32.pdf) | Song et al 
 |16|`ASST` | `ArXiv`  | [Attentive Sequence to Sequence Translation for Localizing Clips of Interest by Natural Language Descriptions](https://arxiv.org/pdf/1808.08803.pdf) | Ning et al 
 
-
+<br/>
 
 ## 2019
 |ID| Model | Venue | Title | Authors | Code  |
@@ -208,7 +272,7 @@ Markdown format:
 |23|`TGA`| `CVPR` | [Weakly Supervised Video Moment Retrieval From Text Queries](<https://arxiv.org/abs/1904.03282>)| Mithun et al | [GitHub](https://github.com/niluthpol/weak_supervised_video_moment)
 |24|`SMRL`| `CVPR` | [Language-Driven Temporal Activity Localization_ A Semantic Matching Reinforcement Learning Model](<http://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Language-Driven_Temporal_Activity_Localization_A_Semantic_Matching_Reinforcement_Learning_Model_CVPR_2019_paper.pdf>)|  Wang et al 
 |25|`SCDM`| `NIPS` | [Semantic Conditioned Dynamic Modulation for Temporal Sentence Grounding in Videos](https://arxiv.org/pdf/1910.14303.pdf)| Yuan et al | [GitHub](https://github.com/yytzsy/SCDM)
-|26|`WSDEC`| `EMNLP` | [WSLLN: Weakly Supervised Natural Language Localization Networks](https://arxiv.org/abs/1909.00239)| Gao et al 
+|26|`WSLLN`| `EMNLP` | [WSLLN: Weakly Supervised Natural Language Localization Networks](https://arxiv.org/abs/1909.00239)| Gao et al 
 |27|`DEBUG`| `EMNLP` | [DEBUG: A Dense Bottom-Up Grounding Approach for Natural Language Video Localization](https://www.aclweb.org/anthology/D19-1518.pdf)| Lu et al
 |28|`ExCL`| `NAACL` | [ExCL: Extractive Clip Localization Using Natural Language Descriptions](https://arxiv.org/abs/1904.02755)| Ghosh et al
 |29|`CMIN`| `SIGIR` | [Cross-Modal Interaction Networks for Query-Based Moment Retrieval in Videos](https://arxiv.org/abs/1906.02497)| Zhang et al |  [GitHub](https://github.com/ikuinen/CMIN_moment_retrieval)
@@ -219,13 +283,13 @@ Markdown format:
 |34|`TCMN`| `ACM` | [Exploiting Temporal Relationships in Video Moment Localization with Natural Language](https://arxiv.org/pdf/1908.03846.pdf)| Zhang et al | [GitHub](https://github.com/Sy-Zhang/TCMN-Release)
 |35|`CAL`| `ArXiv` | [Temporal Localization of Moments in Video Collections with Natural Language](https://arxiv.org/abs/1907.12763v1)| Escorcia et al| [GitHub](https://github.com/escorciav/moments-retrieval-page)
 
- 
+ <br/>
 
 ## 2020
 |ID| Model | Venue | Title | Authors | Code  |
 | :---: | :--- | :--- | --- | ---------- | :---: |
 |36|`CBP`    | `AAAI` | [Temporally Grounding Language Queries in Videos by Contextual Boundary-aware Prediction](https://arxiv.org/pdf/1909.05010.pdf) | Wang et al | [GitHub](https://github.com/JaywongWang/CBP)
-|37|`TSP-PRL`|	`AAAI` |	[Tree-Structured Policy based Progressive Reinforcement Learning for Temporally Language Grounding in Video](https://arxiv.org/pdf/238.06680.pdf)| Wu et al| [GitHub](https://github.com/WuJie1010/TSP-PRL)
+|37|`TSP-PRL`| `AAAI` | [Tree-Structured Policy based Progressive Reinforcement Learning for Temporally Language Grounding in Video](https://arxiv.org/pdf/238.06680.pdf)| Wu et al| [GitHub](https://github.com/WuJie1010/TSP-PRL)
 |38|`2DTAN`  | `AAAI` | [Learning 2D Temporal Localization Networks for Moment Localization with Natural Language](https://arxiv.org/abs/1912.03590) | Zhang et al | [GitHub1](https://github.com/microsoft/2D-TAN), [GitHub2](https://github.com/ChenJoya/2dtan)
 |39|`SCN`    | `AAAI` | [Weakly-Supervised Video Moment Retrieval via Semantic Completion Network](https://arxiv.org/pdf/1911.08199.pdf) | Lin et al | | 
 |40|`GDP`    | `AAAI` | [Rethinking the Bottom-Up Framework for Query-based Video Localization](https://zjuchenlong.github.io/papers/AAAI_2020.pdf) |  Chen et al | 
@@ -257,14 +321,11 @@ Markdown format:
 |66|`CMA` | `ArXiv`  | [A Simple Yet Effective Method for Video Temporal Grounding with Cross-Modality Attention](https://arxiv.org/pdf/2009.11232.pdf) |  Zhang et al| 
 |67|`--`  | `ArXiv`  | [Natural Language Video Localization: A Revisit in Span-based Question Answering Framework](https://arxiv.org/pdf/2102.13558.pdf) | Zhang et al | 
 |68|`VLG-Net`| `ArXiv`  | [VLG-Net: Video-Language Graph Matching Network for Video Grounding](https://arxiv.org/pdf/2011.10132.pdf) | Soldan et al | 
- 
+<!-- |``| `` | [Multi-Scale 2D Temporal Adjacent Networks for Moment Localization with Natural Language](https://arxiv.org/pdf/2012.02646.pdf) - Songyang Zhang et al, `TPAMI submission`. -->
 
+<br/>
 
-|``| `` | [Multi-Scale 2D Temporal Adjacent Networks for Moment Localization with Natural Language](https://arxiv.org/pdf/2012.02646.pdf) - Songyang Zhang et al, `TPAMI submission`.
-
-
-
-### 2021
+## 2021
 
 |ID| Model | Venue | Title | Authors | Code  |
 | :---: | :--- | :--- | --- | ---------- | :---: |
@@ -273,9 +334,9 @@ Markdown format:
 |70|`CBLN` | `arxiv` | [Context-aware Biaffine Localizing Network for Temporal Sentence Grounding](https://arxiv.org/pdf/2103.11555.pdf) | Liu et al | [GitHub](https://github.com/liudaizong/CBLN)
 |71|`DeNet`| `arxiv` | [Embracing Uncertainty: Decoupling and De-bias for Robust Temporal Grounding](https://arxiv.org/pdf/2103.16848.pdf) | Zhou et al |
 
+<br/><br/>
 
-
-## Licenses
+# Licenses
 
 [![CC0](http://i.creativecommons.org/p/zero/1.0/88x31.png)](http://creativecommons.org/publicdomain/zero/1.0/)
 
