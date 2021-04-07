@@ -100,7 +100,7 @@ Methods can be classified in:
 
 ### TACoS (test)
 
-| Models | Features | R@1<br/>IoU0.1 | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.1 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| Models&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Features | R@1<br/>IoU0.1 | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.1 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
 | :---                       |  :---:  | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | CTRL          [[6]](#2017) |   C3D   | 24.32 | 18.32 | 13.30 |   -   | 48.73 | 36.69 | 25.42 |   -   | FS
 | TGN           [[10]](#2018)|   C3D   | 41.87 | 21.77 | 18.90 | 11.88 | 53.40 | 39.06 | 31.02 | 15.26 | FS
