@@ -86,7 +86,7 @@ Methods can be classified in:
 
 ### ActivityNet Captions (val 1 + val2)
 
-| Models | Features | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| Models&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Features &nbsp;&nbsp;&nbsp;| R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
 | :---                       |:---:| :---: | :---: | :---: | :---: | :---: | :---: | :---:  | 
 | QSPN          [[17]](#2019)| C3D | 45.30 | 27.70 | 13.60 | 75.70 | 59.20 | 38.3  |  
 | ABLR          [[20]](#2019)| C3D | 55.67 | 36.79 |   -   |   -   |   -   |   -   | RL
