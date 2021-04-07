@@ -30,14 +30,15 @@ A curated list of grounding natural language in video also referred as Single Vi
 |---     | :---:      | :---:   | :---: | :---:  | :---:|
 |        | Download link         |         | N. videos / N. queries|  | (Unique words) 
 | [ActivityNet Captions](http://cs.stanford.edu/people/ranjaykrishna/densevid/) | [C3D](https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing) | 10009 / 37421 | 4917 / 17505 (val1) <br/> 4885 / 17031 (val2)| 5044 / ? | 15406
-| [TACoS](http://www.coli.uni-saarland.de/projects/smile/page.php?id=software)  | [C3D](https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing) |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 75 / 10146 | &nbsp;&nbsp;&nbsp;&nbsp; 27 / 4589 |&nbsp;&nbsp;&nbsp;&nbsp; 25 / 4083 | 2255
-| [DiDeMo](<https://github.com/LisaAnne/LocalizingMoments>)                     | [VGG16](https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing) <br/> [Flow](https://drive.google.com/file/d/1i888CLCGdHyJ_agbDB9ePjOFOvL2WB5G/view?usp=sharing)| &nbsp;8511 / 33005 | 1094 / 4180 | 1037 / 4021 | 7523
-| [Charades-STA](<https://allenai.org/plato/charades/>)                         | [VGG16](https://drive.google.com/file/d/1P5qCMOsCdDAgF8ej9HOfgZYv3XqR8koy/view?usp=sharing)<br/>[I3D (LGI)](https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing)<br/>[I3D (DRN)](https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing) | &nbsp;5336 / 12404 | 0 / 0 | 1334 / 3720 | 1289
+| [TACoS](http://www.coli.uni-saarland.de/projects/smile/page.php?id=software)  | [C3D](https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing) | 75 / 10146 |  27 / 4589 | 25 / 4083 | 2255
+| [DiDeMo](<https://github.com/LisaAnne/LocalizingMoments>)                     | [VGG16](https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing) <br/> [Flow](https://drive.google.com/file/d/1i888CLCGdHyJ_agbDB9ePjOFOvL2WB5G/view?usp=sharing)| 8511 / 33005 | 1094 / 4180 | 1037 / 4021 | 7523
+| [Charades-STA](<https://allenai.org/plato/charades/>)                         | [VGG16](https://drive.google.com/file/d/1P5qCMOsCdDAgF8ej9HOfgZYv3XqR8koy/view?usp=sharing)<br/>[I3D (LGI)](https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing)<br/>[I3D (DRN)](https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing) | 5336 / 12404 | 0 / 0 | 1334 / 3720 | 1289
 
 <br/><br/>
 
 # 02 - Benchmark Results
 ## Evaluation metric: Recall@k for IoU=m ([link](https://medium.com/qloo/popular-evaluation-metrics-in-recommender-systems-explained-324ff2fb427d)).
+<br/><br/>
 
 ## ActivityNet Captions (val 1)
 
@@ -58,44 +59,55 @@ A curated list of grounding natural language in video also referred as Single Vi
 | WSLLN&nbsp;[[26]](#2019)|  |  75.4     |    42.8     |    22.7     |      -      |      -      |      -      |      -      |      -      |        |
 
 
+<br/><br/>
 
 ## Charades-STA
 
-| Models | Features | R@1<br />IoU0.3 | R@1<br />IoU0.5 | R@1<br />IoU0.7 | R@5<br />IoU0.3 | R@5<br />IoU0.5 | R@5<br />IoU0.7 | Method |
-| :--- | :---: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: |
-| CTRL          [[6]](#2017) | C3D |   -   | 23.63 | 8.89  |   -   | 58.92 | 29.52 |   x   |
-| ACRN          [[12]](#2018)| C3D |   -   | 20.26 | 7.64  |   -   | 71.99 | 27.79 |   x   |
-| ROLE          [[14]](#2018)| C3D |   -   | 21.74 | 7.82  |   -   | 70.37 | 30.06 |   x   |
-| VAL           [[15]](#2018)| C3D |   -   | 23.12 | 9.16  |   -   | 61.26 | 27.98 |   x   |
-| ASST          [[16]](#2018)| C3D |   -   | 42.72 | 24.06 |   -   | 71.32 | 43.98 |   x   |
-| ACL           [[32]](#2019)| C3D |   -   | 26.47 | 11.23 |   -   | 61.51 | 33.23 |   x   |
-| ACL-K         [[32]](#2019)| C3D |   -   | 30.48 | 12.20 |   -   | 64.84 | 35.13 |   x   |
-| SAP           [[21]](#2019)|VGG16|   -   | 27.42 | 13.36 |   -   | 66.37 | 38.15 |   x   |
-| QSPN          [[17]](#2019)| C3D | 54.70 | 35.60 | 15.80 | 95.80 | 79.40 | 45.40 |   x   |
-| ABLR          [[20]](#2019)| C3D |   -   | 24.36 | 9.01  |   -   | -     | -     |   x   |
-| MAN           [[22]](#2019)|VGG16|   -   | 41.24 | 20.54 |   -   | 83.21 | 51.85 |   x   |
-| MAN           [[22]](#2019)| I3D |   -   | 46.53 | 22.72 |   -   | 86.23 | 53.72 |   x   |
-| SMRL          [[24]](#2019)|VGG16|   -   | 24.36 | 11.17 |   -   | 61.25 | 32.08 |   x   |
-| SCDM          [[25]](#2019)| I3D |   -   | 54.44 | 33.43 |   -   | 74.43 | 58.08 |   x   |
-| SLTA          [[31]](#2019)|C3D+<br/>FRCNN|-|22.81| 8.25 |   -   | 72.39 | 31.46 |   x   |
-| DEBUG         [[27]](#2019)| C3D |   -   | 37.39 | 17.69 |   -   | -     | -     |   x   |
-| ExCL          [[28]](#2019)| I3D | 65.10 | 44.10 | 22.40 |   -   | -     | -     |   x   |
-| CBP           [[36]](#2020)| C3D |   -   | 36.80 | 18.87 |   -   | 70.94 | 50.19 |   x   |
-| TSP-PRL       [[37]](#2020)| C3D |   -   | 37.39 | 17.69 |   -   | -     | -     |   x   |
-| TSP-PRL       [[x37]](#2020)|Two Streams|-| 45.30 | 24.73 |   -   | -     | -     |   x   |
-| TripNet       [[48]](#2020)| C3D | 51.33 | 38.29 | 16.07 |   -   | -     | -     |   x   |
-| 2D-TAN (pool) [[39]](#2020)|VGG16|   -   | 39.70 | 23.31 |   -   | 80.32 | 51.26 |   x   |
-| 2D-TAN (conv) [[x]](#2020)|VGG16|   -   | 39.81 | 23.25 |   -   | 79.33 | 52.15 |   x   |
-| TMLGA         [[x]](#2020)| I3D | 67.53 | 52.02 | 33.74 |   -   | -     | -     |   x   |
-| DRN           [[x]](#2020)|VGG16|   -   | 42.90 | 23.68 |   -   | 87.80 | 54.87 |   x   |
-| DRN           [[x]](#2020)| C3D |   -   | 45.40 | 26.40 |   -   | 88.01 | 55.38 |   x   |
-| DRN           [[x]](#2020)| I3D |   -   | 53.09 | 31.75 |   -   | 89.06 | 60.05 |   x   |
-| LGI           [[x]](#2020)| I3D |   -   | 59.46 | 35.48 |   -   | -     | -     |   x   |
-| LGN           [[x]](#2020)|VGG16|   -   | 48.15 | 26.67 |   -   | 86.80 | 53.01 |   x   |
-| GDP           [[x]](#2020)| C3D |   -   | 39.47 | 18.49 |   -   | -     | -     |   x   |
-| VSLNet        [[x]](#2020)| I3D |   -   | 54.19 | 35.22 |   -   | -     | -     |   x   |
-| HVTG          [[x]](#2020)|FRCNN|   -   | 47.27 | 23.30 |   -   | -     | -     |   x   |
-| PMI           [[x]](#2020)| C3D |   -   | 39.73 | 19.27 |   -   | -     | -     |   x   |
+| Models        | Features   | R@1<br />IoU0.3 | R@1<br />IoU0.5 | R@1<br />IoU0.7 | R@5<br />IoU0.3 | R@5<br />IoU0.5 | R@5<br />IoU0.7 |
+| :---          | :---:      | :---:           | :---:           | :---:           | :---:           | :---:           | :---:           |
+| CTRL          [[6]](#2017) |      C3D     |   -   | 23.63 | 8.89  |   -   | 58.92 | 29.52 |
+| ACRN          [[12]](#2018)|      C3D     |   -   | 20.26 | 7.64  |   -   | 71.99 | 27.79 |
+| ROLE          [[14]](#2018)|      C3D     |   -   | 21.74 | 7.82  |   -   | 70.37 | 30.06 |
+| VAL           [[15]](#2018)|      C3D     |   -   | 23.12 | 9.16  |   -   | 61.26 | 27.98 |
+| ASST          [[16]](#2018)|      C3D     |   -   | 42.72 | 24.06 |   -   | 71.32 | 43.98 |
+| QSPN          [[17]](#2019)|      C3D     | 54.70 | 35.60 | 15.80 | 95.80 | 79.40 | 45.40 |
+| ABLR          [[20]](#2019)|      C3D     |   -   | 24.36 | 9.01  |   -   |   -   |   -   |
+| SAP           [[21]](#2019)|     VGG16    |   -   | 27.42 | 13.36 |   -   | 66.37 | 38.15 |
+| MAN           [[22]](#2019)|     VGG16    |   -   | 41.24 | 20.54 |   -   | 83.21 | 51.85 |
+| MAN           [[22]](#2019)|      I3D     |   -   | 46.53 | 22.72 |   -   | 86.23 | 53.72 |
+| TGA           [[23]](#2019)|      ---     | 32.14 | 19.94 | 8.84  | 56.58 | 65.52 | 33.51 | WS |
+| SMRL          [[24]](#2019)|     VGG16    |   -   | 24.36 | 11.17 |   -   | 61.25 | 32.08 |
+| SCDM          [[25]](#2019)|      I3D     |   -   | 54.44 | 33.43 |   -   | 74.43 | 58.08 |
+| DEBUG         [[27]](#2019)|      C3D     |   -   | 37.39 | 17.69 |   -   |   -   |   -   |
+| ExCL          [[28]](#2019)|      I3D     | 65.10 | 44.10 | 22.40 |   -   |   -   |   -   |
+| SLTA          [[31]](#2019)|C3D+<br/>FRCNN|   -   | 22.81 |  8.25 |   -   | 72.39 | 31.46 |
+| ACL           [[32]](#2019)|      C3D     |   -   | 26.47 | 11.23 |   -   | 61.51 | 33.23 |
+| ACL-K         [[32]](#2019)|      C3D     |   -   | 30.48 | 12.20 |   -   | 64.84 | 35.13 |
+| CBP           [[36]](#2020)|      C3D     |   -   | 36.80 | 18.87 |   -   | 70.94 | 50.19 |
+| TSP-PRL       [[37]](#2020)|      C3D     |   -   | 37.39 | 17.69 |   -   |   -   |   -   |
+| TSP-PRL       [[37]](#2020)|  Two Streams |   -   | 45.30 | 24.73 |   -   |   -   |   -   |
+| 2D-TAN (pool) [[38]](#2020)|     VGG16    |   -   | 39.70 | 23.31 |   -   | 80.32 | 51.26 |
+| 2D-TAN (conv) [[38]](#2020)|     VGG16    |   -   | 39.81 | 23.25 |   -   | 79.33 | 52.15 |
+| CTF           [[39]](#2020)|     ---      | 42.96 | 23.58 |  9.97 | 95.56 | 71.80 | 38.84 | WS
+| GDP           [[40]](#2020)|      C3D     |   -   | 39.47 | 18.49 |   -   |   -   |   -   |
+| DRN           [[41]](#2020)|     VGG16    |   -   | 42.90 | 23.68 |   -   | 87.80 | 54.87 |
+| DRN           [[41]](#2020)|      C3D     |   -   | 45.40 | 26.40 |   -   | 88.01 | 55.38 |
+| DRN           [[41]](#2020)|      I3D     |   -   | 53.09 | 31.75 |   -   | 89.06 | 60.05 |
+| LGI           [[43]](#2020)|      I3D     |   -   | 59.46 | 35.48 |   -   |   -   |   -   |
+| HVTG          [[45]](#2020)|     FRCNN    |   -   | 47.27 | 23.30 |   -   |   -   |   -   |
+| PMI           [[46]](#2020)|      C3D     |   -   | 39.73 | 19.27 |   -   |   -   |   -   |
+| TripNet       [[47]](#2020)|      C3D     | 51.33 | 38.29 | 16.07 |   -   |   -   |   -   |
+| VSLNet        [[48]](#2020)|      I3D     |   -   | 54.19 | 35.22 |   -   |   -   |   -   |
+| TMLGA         [[49]](#2020)|      I3D     | 67.53 | 52.02 | 33.74 |   -   |   -   |   -   |
+| RTBPN         [[51]](#2020)|      C3D     | 60.04 | 32.36 | 13.24 | 97.48 | 71.85 | 41.18 | WS
+| AVMR          [[53]](#2020)|    ResNet    | 77.72 | 54.59 |   -   | 88.92 | 72.78 |   -   | WS
+| DPIN          [[54]](#2020)|     VGG16    |   -   | 47.98 | 26.96 |   -   | 85.53 | 55.00 |
+| FIAN          [[56]](#2020)|      I3D     |   -   | 58.55 | 37.72 |   -   | 87.80 | 63.52 |
+| WSTG          [[62]](#2020)|      ---     | 39.80 | 27.30 | 12.90 |   -   |   -   |   -   | WS
+| LGN           [[65]](#2020)|     VGG16    |   -   | 48.15 | 26.67 |   -   | 86.80 | 53.01 |
+							
+
+<br/><br/>
 
 ## DiDeMo
 
@@ -107,22 +119,33 @@ A curated list of grounding natural language in video also referred as Single Vi
 |      MAN       |    27.02    |      -      |      -      |      -      |    81.70    |      -      |      -      |      -      |
 | WSLLN (Weakly) |    19.4     |      -      |      -      |      -      |    54.4     |      -      |      -      |      -      |
 
+
+WSLLN [13] RGB 19.40 53.10 25.40
+RTBPN (our) RGB 20.38 55.88 26.53
+WSLLN [13] Flow 18.40 54.40 27.40
+RTBPN (our) Flow 20.52 57.72 30.54
+TGA [23] RGB+Flow 12.19 39.74 24.92
+RTBPN (our) RGB+Flow 20.79 60.26 29.81
+
+<br/><br/>
+
 ## TACoS
 
-|         | R@1 IoU@0.1 | R@1 IoU@0.3 | R@1 IoU@0.5 | R@1 IoU@0.7 | R@5 IoU@0.1 | R@5 IoU@0.3 | R@5 IoU@0.5 | R@5 IoU@0.7 | Method |
-| :-----: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :----: |
-|   MCN   |    2.62     |    1.64     |    1.25     |      -      |    2.88     |    1.82     |    1.01     |      -      |   PB   |
-|  CTRL   |    24.32    |    18.32    |    13.30    |      -      |    48.73    |    36.69    |    25.42    |      -      |   PB   |
-|   TGN   |    41.87    |    21.77    |    18.90    |      -      |    53.40    |    39.06    |    31.02    |      -      |   PB   |
-|  ACRN   |    24.22    |    19.52    |    14.62    |      -      |    47.42    |    34.97    |    24.88    |      -      |   PB   |
-|  ACL-K  |    31.64    |    24.17    |    20.01    |      -      |    57.85    |    42.15    |    30.66    |      -      |   PB   |
-|  SCDM   |      -      |    26.11    |    21.17    |      -      |      -      |    40.16    |    32.18    |      -      |   PB   |
-|   CBP   |      -      |    27.31    |    24.79    |    19.10    |      -      |    43.64    |    37.40    |    25.59    |   PB   |
-| TripNet |      -      |    23.95    |    19.17    |    9.52     |      -      |      -      |      -      |      -      |   RL   |
-|  SMRL   |    26.51    |    20.25    |    15.95    |      -      |    50.01    |    38.47    |    27.84    |      -      |   RL   |
-|  ABLR   |    34.7     |    19.5     |     9.4     |      -      |      -      |      -      |      -      |      -      |   RL   |
-|  ExCL   |      -      |    45.5     |    28.0     |    14.6     |      -      |      -      |      -      |      -      |   PF   |
+|         | R@1 IoU@0.1 | R@1 IoU@0.3 | R@1 IoU@0.5 | R@1 IoU@0.7 | R@5 IoU@0.1 | R@5 IoU@0.3 | R@5 IoU@0.5 | R@5 IoU@0.7 |
+| :-----: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | :---------: | 
+|   MCN   |    2.62     |    1.64     |    1.25     |      -      |    2.88     |    1.82     |    1.01     |      -      | 
+|  CTRL   |    24.32    |    18.32    |    13.30    |      -      |    48.73    |    36.69    |    25.42    |      -      | 
+|   TGN   |    41.87    |    21.77    |    18.90    |      -      |    53.40    |    39.06    |    31.02    |      -      | 
+|  ACRN   |    24.22    |    19.52    |    14.62    |      -      |    47.42    |    34.97    |    24.88    |      -      |
+|  ACL-K  |    31.64    |    24.17    |    20.01    |      -      |    57.85    |    42.15    |    30.66    |      -      |
+|  SCDM   |      -      |    26.11    |    21.17    |      -      |      -      |    40.16    |    32.18    |      -      | 
+|   CBP   |      -      |    27.31    |    24.79    |    19.10    |      -      |    43.64    |    37.40    |    25.59    | 
+| TripNet |      -      |    23.95    |    19.17    |    9.52     |      -      |      -      |      -      |      -      | 
+|  SMRL   |    26.51    |    20.25    |    15.95    |      -      |    50.01    |    38.47    |    27.84    |      -      | 
+|  ABLR   |    34.7     |    19.5     |     9.4     |      -      |      -      |      -      |      -      |      -      | 
+|  ExCL   |      -      |    45.5     |    28.0     |    14.6     |      -      |      -      |      -      |      -      | 
 
+AVMR 93.20% 77.72% 54.59% 98.87% 88.92% 72.78% 89.77% 72.16% 49.13% 94.26% 83.37% 64.40%
 
 <br/><br/>
 
@@ -135,23 +158,23 @@ Markdown format:
 
 ## Analysis papers
 |ID| Model | Venue | Title | Authors  | Code  |
-|---| ---  | --- | --- | --- | --- 
+| :---: | :---: | :--- | --- | ---------- | :---: |
 |-  |`--`  | `BMVC 2020` | [Uncovering Hidden Challenges in Query-Based Video Moment Retrieval](https://arxiv.org/pdf/2009.00325.pdf) | Otani et al | 
 |-  |`--`  | `ArXiv 2020`  | [A Closer Look at Temporal Sentence Grounding in Videos: Datasets and Metrics](https://arxiv.org/pdf/2101.09028.pdf) | Yuan et al | [GitHub](https://github.com/yytzsy/grounding_changing_distribution)
 
 ## Early works
 |ID| Model | Venue | Title | Authors  | Code  |
-|---| --- | --- | --- | --- | --- |
-|1|  | `ACL 2013`    | [Grounded Language Learning from Video Described with Sentences](https://www.aclweb.org/anthology/P13-1006/) |  Yu et al
-|2|  | `CVPR 2014`   | [Visual Semantic Search: Retrieving Videos via Complex Textual Queries](<https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Lin_Visual_Semantic_Search_2014_CVPR_paper.pdf>) |  Lin et al
-|3|  | `AAAI 2015`   |  [Jointly Modeling Deep Video and Compositional Text to Bridge Vision and Language in a Unified Framework](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9734) | Xu et al
-|4|  |  `IJCAI 2016` | [Unsupervised Alignment of Actions in Video with Text Descriptions](https://pdfs.semanticscholar.org/5893/7d427ff36e1470b18120245148355047e4ea.pdf) |  Song et al
+| :---: | :---: | :--- | --- | ---------- | :---: |
+|1|`--`  | `ACL 2013`    | [Grounded Language Learning from Video Described with Sentences](https://www.aclweb.org/anthology/P13-1006/) |  Yu et al
+|2|`--`  | `CVPR 2014`   | [Visual Semantic Search: Retrieving Videos via Complex Textual Queries](<https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Lin_Visual_Semantic_Search_2014_CVPR_paper.pdf>) |  Lin et al
+|3|`--`  | `AAAI 2015`   |  [Jointly Modeling Deep Video and Compositional Text to Bridge Vision and Language in a Unified Framework](https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9734) | Xu et al
+|4|`--`  |  `IJCAI 2016` | [Unsupervised Alignment of Actions in Video with Text Descriptions](https://pdfs.semanticscholar.org/5893/7d427ff36e1470b18120245148355047e4ea.pdf) |  Song et al
  
 
 ## 2017
 
 |ID| Model | Venue | Title | Authors  | Code  |
-| --- | --- | --- | --- | --- | --- |
+| :---: | :--- | :--- | --- | ---------- | :---: |
 |5| `MCN`   | `ICCV`  | [Localizing Moments in Video with Natural Language](https://arxiv.org/abs/1708.01641)  | Hendricks et al | [GitHub](https://github.com/LisaAnne/LocalizingMoments)|
 |6| `CTRL`  | `ICCV`  | [TALL: Temporal Activity Localization via Language Query](https://arxiv.org/abs/1705.02101)  | Gao et al | [GitHub](<https://github.com/jiyanggao/TALL>)  |
 |7| `--`    | `ArXiv` | [Where to Play: Retrieval of Video Segments using Natural-Language Queries](<https://arxiv.org/abs/1707.00251>) | Lee et al | 
@@ -160,22 +183,22 @@ Markdown format:
 ## 2018
 
 |ID| Model | Venue | Title | Authors | Code  |
-| --- | --- | --- | --- | --- | --- |
+| :---: | :--- | :--- | --- | ---------- | :---: |
 |8|`FIFO` | `ECCV`   | [Find and Focus: Retrieve and Localize Video Events with Natural Language Queries](<http://openaccess.thecvf.com/content_ECCV_2018/papers/Dian_SHAO_Find_and_Focus_ECCV_2018_paper.pdf>) | Shao et al | | 
-|9|`TMN`  | `ECCV`   | [Temporal Modular Networks for Retrieving Complex Compositional Activities in Videos](<http://svl.stanford.edu/assets/papers/liu2018eccv.pdf>)  | B. Liu et al | |
+|9|`TMN`  | `ECCV`   | [Temporal Modular Networks for Retrieving Complex Compositional Activities in Videos](<http://svl.stanford.edu/assets/papers/liu2018eccv.pdf>)  | Liu et al | |
 |10|`TGN`  | `EMNLP`  | [Temporally Grounding Natural Sentence in Video](<https://aclweb.org/anthology/papers/D/D18/D18-1015/>)  | Chen et al | [GitHub](https://github.com/JaywongWang/TGN)
 |11|`TEMPO`| `EMNLP`  | [Localizing Moments in Video with Temporal Language](<https://arxiv.org/abs/1809.01337>)                 | Hendricks et al | [GitHub](https://github.com/LisaAnne/TemporalLanguageRelease)
 |12|`ACRN` | `SIGIR`  | [Attentive Moment Retrieval in Videos](http://staff.ustc.edu.cn/~hexn/papers/sigir18-video-retrieval.pdf)| Liu et al | [GitHub](https://sigir2018.wixsite.com/acrn)
 |13|`MCF`  | `IJCAI`  | [Multi-modal Circulant Fusion for Video-to-Language and Backward](https://pdfs.semanticscholar.org/e2e5/cef45c60c52fb0d0415cca6cbf35beab3873.pdf) | Wu et al | [GitHub](<https://github.com/AmingWu/Multi-modal-Circulant-Fusion/>)
 |14|`ROLE` | `ACM MM` | [Cross-modal Moment Localization in Videos](https://liqiangnie.github.io/paper/p843-liu.pdf)             |  Liu et al |  [GitHub](https://acmmm18.wixsite.com/role)
-|015|`VAL`  | `PRCM`   | [VAL: Visual-attention action localizer](https://link.springer.com/content/pdf/10.1007%2F978-3-030-00767-6_32.pdf) | Song et al 
+|15|`VAL`  | `PRCM`   | [VAL: Visual-attention action localizer](https://link.springer.com/content/pdf/10.1007%2F978-3-030-00767-6_32.pdf) | Song et al 
 |16|`ASST` | `ArXiv`  | [Attentive Sequence to Sequence Translation for Localizing Clips of Interest by Natural Language Descriptions](https://arxiv.org/pdf/1808.08803.pdf) | Ning et al 
 
 
 
 ## 2019
 |ID| Model | Venue | Title | Authors | Code  |
-| --- | --- | --- | --- | --- | --- |
+| :---: | :--- | :--- | --- | ---------- | :---: |
 |17|`QSPN`| `AAAI` | [Multilevel Language and Vision Integration for Text-to-Clip Retrieval](<https://arxiv.org/abs/1804.05113>)| Xu et al | [GitHub](<https://github.com/VisionLearningGroup/Text-to-Clip_Retrieval>)
 |18|`LNet`| `AAAI` | [Localizing Natural Language in Videos ](https://www.aaai.org/ojs/index.php/AAAI/article/view/4827/4700)| Chen et al
 |19|`A2C` | `AAAI` | [Read, Watch, and Move: Reinforcement Learning for Temporally Grounding Natural Language Descriptions in Videos](https://arxiv.org/abs/1901.06829)| Dongliang et al | [GitHub](https://github.com/WuJie1010/Temporally-language-grounding)
@@ -200,7 +223,7 @@ Markdown format:
 
 ## 2020
 |ID| Model | Venue | Title | Authors | Code  |
-| ---| --- | --- | --- | --- | --- |
+| :---: | :--- | :--- | --- | ---------- | :---: |
 |36|`CBP`    | `AAAI` | [Temporally Grounding Language Queries in Videos by Contextual Boundary-aware Prediction](https://arxiv.org/pdf/1909.05010.pdf) | Wang et al | [GitHub](https://github.com/JaywongWang/CBP)
 |37|`TSP-PRL`|	`AAAI` |	[Tree-Structured Policy based Progressive Reinforcement Learning for Temporally Language Grounding in Video](https://arxiv.org/pdf/238.06680.pdf)| Wu et al| [GitHub](https://github.com/WuJie1010/TSP-PRL)
 |38|`2DTAN`  | `AAAI` | [Learning 2D Temporal Localization Networks for Moment Localization with Natural Language](https://arxiv.org/abs/1912.03590) | Zhang et al | [GitHub1](https://github.com/microsoft/2D-TAN), [GitHub2](https://github.com/ChenJoya/2dtan)
@@ -218,7 +241,7 @@ Markdown format:
 |50|`--`     | `NIPS` | [Counterfactual Contrastive Learning for Weakly-Supervised Vision-Language Grounding](https://papers.nips.cc/paper/2020/file/d27b95cac4c27feb850aaa4070cc4675-Paper.pdf) |  Zhang et al | 
 |51|`RTBPN`  | `ACM`  | [Regularized Two-Branch Proposal Networks for Weakly-Supervised Moment Retrieval in Videos](https://dl.acm.org/doi/pdf/10.1145/3394171.3413967) |  Zhang et al | 
 |52|`STRONG` | `ACM`  | [STRONG: Spatio-Temporal Reinforcement Learning for Cross-Modal Video Moment Localization](http://data-science.ustc.edu.cn/_upload/article/files/c4/4f/10f4da284171a6275429698edccf/16741411-8b8b-405a-90a8-5c4baac1c620.pdf) | Cao et al | 
-|53|`--`     | `ACM`  | [Adversarial Video Moment Retrieval by Jointly Modeling Ranking and Localization](https://dl.acm.org/doi/pdf/10.1145/3394171.3413841) | Cao et al | 
+|53|`AVMR`   | `ACM`  | [Adversarial Video Moment Retrieval by Jointly Modeling Ranking and Localization](https://dl.acm.org/doi/pdf/10.1145/3394171.3413841) | Cao et al | 
 |54|`DPIN`   | `ACM`  | [Dual Path Interaction Network for Video Moment Localization](https://dl.acm.org/doi/abs/10.1145/3394171.3413975) | Wang et al | 
 |55|`STVG`   | `ACM`  | [Weakly-Supervised Video Object Grounding by Exploring Spatio-Temporal Contexts](https://dl.acm.org/doi/abs/10.1145/3394171.3413610) | Yang et al | 
 |56|`FIAN`   | `ACM`  | [Fine-grained Iterative Attention Network for Temporal Language Localization in Videos](https://dl.acm.org/doi/abs/10.1145/3394171.3414053) | Qu et al | 
@@ -243,9 +266,12 @@ Markdown format:
 
 ### 2021
 
+|ID| Model | Venue | Title | Authors | Code  |
+| :---: | :--- | :--- | --- | ---------- | :---: |
+|69|`LoGAN`| `WACV`  | [LoGAN: Latent Graph Co-Attention Network for Weakly-Supervised Video Moment Retrieval](https://openaccess.thecvf.com/content/WACV2021/papers/Tan_LoGAN_Latent_Graph_Co-Attention_Network_for_Weakly-Supervised_Video_Moment_Retrieval_WACV_2021_paper.pdf) | Tan et al | 
 
-
-
+|70|`CBLN` | `arxiv` | [Context-aware Biaffine Localizing Network for Temporal Sentence Grounding](https://arxiv.org/pdf/2103.11555.pdf) | Liu et al | [GitHub](https://github.com/liudaizong/CBLN)
+|71|`DeNet`| `arxiv` | [Embracing Uncertainty: Decoupling and De-bias for Robust Temporal Grounding](https://arxiv.org/pdf/2103.16848.pdf) | Zhou et al |
 
 
 
