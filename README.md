@@ -137,7 +137,7 @@ Methods can be classified in:
 
 ### DiDeMo (test)
 
-| Models | Features | R@1<br/>IoU0.5 | R@1<br/>IoU0.7 | R@1<br/>IoU1.0 | R@5<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU1.0 | Method |
+| Models &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Features | R@1<br/>IoU0.5 | R@1<br/>IoU0.7 | R@1<br/>IoU1.0 | R@5<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU1.0 | Method |
 | :---                       |  :---:      | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 | MCN           [[5]](#2017) | VGG16<br/>Flow<br/>VGG16+Flow<br/>VGG16+Flow+TEF     |   -<br/>-<br/>-<br/>-   | -<br/>-<br/>-<br/>- | 13.10<br/>18.35<br/>19.88<br/>28.10  |   -<br/>-<br/>-<br/>-   | -<br/>-<br/>-<br/>- | 44.82<br/>56.25<br/>62.39<br/>78.21 |  FS
 | TMN           [[9]](#2018) | VGG16<br/>Flow<br/>VGG16+Flow|   -<br/>-<br/>   | -<br/>-<br/>- | 18.71<br/>19.90<br/>22.92  | -<br/>-<br/>- | -<br/>-<br/>- | 72.97<br/>75.14<br/>76.08 | FS
