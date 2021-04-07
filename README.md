@@ -50,7 +50,7 @@ Methods can be classified in:
 
 ### ActivityNet Captions (val 1)
 
-| Models | Features | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| Models&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Features | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
 | :---                       |:---:| :---: | :---: | :---: | :---: | :---: | :---: | :---:  | 
 | ACRN          [[12]](#2018)| C3D | 31.29 | 16.17 |   -   |   -   |   -   |   -   |
 | A2C           [[19]](#2019)| C3D |   -   | 36.90 |   -   |   -   |   -   |   -   |
