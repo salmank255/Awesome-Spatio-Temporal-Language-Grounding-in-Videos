@@ -15,7 +15,7 @@ The task is also usually referred as Single Video Moment Retrieval (SVMR) or Tem
 
  b-d) Represent a high-level overview of common multi-modality interaction schemes investigated in the literature. 
 
-  <div align="center"><img height="400px" src="https://drive.google.com/uc?export=view&id=1OsY4636sI8hRoJOhSSJ-kJzecr7GUc4C"></div>
+  <div align="center"><img height="300px" src="https://drive.google.com/uc?export=view&id=1OsY4636sI8hRoJOhSSJ-kJzecr7GUc4C"></div>
 
 <br/><br/>
 
