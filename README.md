@@ -4,15 +4,20 @@
   <img width="250" src="https://camo.githubusercontent.com/1131548cf666e1150ebd2a52f44776d539f06324/68747470733a2f2f63646e2e7261776769742e636f6d2f73696e647265736f726875732f617765736f6d652f6d61737465722f6d656469612f6c6f676f2e737667" "Awesome!">
 </p>
 
-A curated list of grounding natural language in video also referred as Single Video Moment Retrieval (SVMR).
+A curated list of Natural Language Grounding in Videos papers. <br/>
+The task is also usually referred as Single Video Moment Retrieval (SVMR) or Temporal Activity Localization with Language (TALL).
+
+<br/><br/>
 
 ## Task definition:
 
-- Given an untrimmed video and a language query, the video grounding task aims to localize a temporal moment in the video that matches the query.
+ a) Given an untrimmed video and a language query, the video grounding task aims to localize a temporal moment (t<sub>s</sub>,t<sub>e</sub>) in the video that matches the query.
 
-  <div align="center"><img height="200px" src="https://res.cloudinary.com/dzu6x6nqi/image/upload/v1554267644/Awesome%20Language%20Moment%20Retrieval/TALL_-_2.png"></div>
+ b-d) Represent a high-level overview of common multi-modality interaction schemes investigated in the literature. 
 
+  <div align="center"><img height="400px" src="https://drive.google.com/uc?export=view&id=1OsY4636sI8hRoJOhSSJ-kJzecr7GUc4C"></div>
 
+<br/><br/>
 
 # 00 - Table of Contents
 
@@ -50,7 +55,7 @@ Methods can be classified in:
 
 ### ActivityNet Captions (val 1)
 
-| Models&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Features &nbsp;&nbsp;&nbsp;| R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| Models&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Features &nbsp;&nbsp;&nbsp;| R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@1<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
 | :---                       |:---:| :---: | :---: | :---: | :---: | :---: | :---: | :---:  | 
 | ACRN          [[12]](#2018)| C3D | 31.29 | 16.17 |   -   |   -   |   -   |   -   | FS
 | A2C           [[19]](#2019)| C3D |   -   | 36.90 |   -   |   -   |   -   |   -   | RL
@@ -65,7 +70,7 @@ Methods can be classified in:
 
 ### ActivityNet Captions (val 2)
 
-| Models | Features | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| Models | Features | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@1<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
 | :---                       |:---:| :---: | :---: | :---: | :---: | :---: | :---: | :---:  | 
 | TGN [[10]](#2018) | C3D<br/>VGG16<br/>Inception-V4 | 43.81<br/>42.24<br/>45.51 | 27.93<br/>23.90<br/>28.47 | 11.86<br/>-<br/>- | 54.56<br/>51.82<br/>57.32 | 44.20<br/> 40.17<br/>43.33 | 24.84<br/>-<br/>- | FS
 | CTRL          [[6]](#2017)  | C3D | 47.43 | 29.01 |   -   | 75.32 | 59.17 |   -   | FS 
@@ -89,7 +94,7 @@ Methods can be classified in:
 
 ### ActivityNet Captions (val 1 + val2)
 
-| Models&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Features &nbsp;&nbsp;&nbsp;| R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| Models&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Features &nbsp;&nbsp;&nbsp;| R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@1<br/>IoU0.7 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
 | :---                       |:---:| :---: | :---: | :---: | :---: | :---: | :---: | :---:  | 
 | QSPN          [[17]](#2019)| C3D | 45.30 | 27.70 | 13.60 | 75.70 | 59.20 | 38.30 | FS  
 | ABLR          [[20]](#2019)| C3D | 55.67 | 36.79 |   -   |   -   |   -   |   -   | RL
@@ -103,7 +108,7 @@ Methods can be classified in:
 
 ### TACoS (test)
 
-| Models&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Features | R@1<br/>IoU0.1 | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@5<br/>IoU0.7 | R@5<br/>IoU0.1 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
+| Models&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | Features | R@1<br/>IoU0.1 | R@1<br/>IoU0.3 | R@1<br/>IoU0.5 | R@1<br/>IoU0.7 | R@5<br/>IoU0.1 | R@5<br/>IoU0.3 | R@5<br/>IoU0.5| R@5<br/>IoU0.7| Method |
 | :---                       |  :---:  | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
 | CTRL          [[6]](#2017) |   C3D   | 24.32 | 18.32 | 13.30 |   -   | 48.73 | 36.69 | 25.42 |   -   | FS
 | TGN           [[10]](#2018)|   C3D   | 41.87 | 21.77 | 18.90 | 11.88 | 53.40 | 39.06 | 31.02 | 15.26 | FS
