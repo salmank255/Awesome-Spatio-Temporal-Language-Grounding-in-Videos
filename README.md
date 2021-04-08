@@ -1,6 +1,6 @@
 # Awesome-Temporal-Sentence-Grounding-in-Videos[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-<p align="center">
+<p align="center" valign="middle">
   <img width="250" src="https://camo.githubusercontent.com/1131548cf666e1150ebd2a52f44776d539f06324/68747470733a2f2f63646e2e7261776769742e636f6d2f73696e647265736f726875732f617765736f6d652f6d61737465722f6d656469612f6c6f676f2e737667" "Awesome!">
 </p>
 
@@ -18,7 +18,7 @@ The task is also usually referred to as:
 
  b-d) Represent a high-level overview of common multi-modality interaction schemes investigated in the literature. 
 
-  <div align="center"><img height="300px" src="https://drive.google.com/uc?export=view&id=1OsY4636sI8hRoJOhSSJ-kJzecr7GUc4C"></div>
+  <div align="center" valign="middle"><img height="300px" src="https://drive.google.com/uc?export=view&id=1OsY4636sI8hRoJOhSSJ-kJzecr7GUc4C"></div>
 
 <br/>
 
@@ -36,50 +36,50 @@ The task is also usually referred to as:
 
 <table rules="rows">
   <tr>
-    <td valign="middle">Dataset</td>
-    <td valign="middle"> <p align="center"> Features (link) </p></td>
-    <td valign="middle"> <p align="center"> Train </p></td>
-    <td valign="middle"> <p align="center"> Val </p></td>
-    <td valign="middle"> <p align="center"> Test </p></td>
-    <td valign="middle"> <p align="center"> Vocab. Size </p></td>
+    <td>Dataset</td>
+    <td> <p align="center" valign="middle"> Features (link) </p></td>
+    <td> <p align="center" valign="middle"> Train </p></td>
+    <td> <p align="center" valign="middle"> Val </p></td>
+    <td> <p align="center" valign="middle"> Test </p></td>
+    <td> <p align="center" valign="middle"> Vocab. Size </p></td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td colspan="3"  valign="middle"> <p align="center">N. videos / N. queries </p></td>
-    <td  valign="middle"> <p align="center"> (Unique words) </td>
+    <td colspan="3"  valign="middle"> <p align="center" valign="middle">N. videos / N. queries </p></td>
+    <td  valign="middle"> <p align="center" valign="middle"> (Unique words) </td>
   </tr>
   <tr>
-    <td valign="middle"> <p align="left">  <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a> </p> </td>
-    <td valign="middle"> <p align="center">  <a href="https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing">C3D</a></td>
-    <td valign="middle"> <p align="center">  10009 / 37421  </p></td>
-    <td valign="middle"> <p align="center">  4917 / 17505 (val1)  <br/> 4885 / 17031 (val2)  </p></td>
-    <td valign="middle"> <p align="center">  5044 / ?  </p></td>
-    <td valign="middle"> <p align="center">  15406     </p></td>
+    <td> <p align="left">  <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a> </p> </td>
+    <td> <p align="center" valign="middle">  <a href="https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing">C3D</a></td>
+    <td> <p align="center" valign="middle">  10009 / 37421  </p></td>
+    <td> <p align="center" valign="middle">  4917 / 17505 (val1)  <br/> 4885 / 17031 (val2)  </p></td>
+    <td> <p align="center" valign="middle">  5044 / ?  </p></td>
+    <td> <p align="center" valign="middle">  15406     </p></td>
   </tr>
   <tr>
-    <td valign="middle"> <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">TACoS</a></td>
-    <td valign="middle"> <p align="center">  <a href="https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing">C3D</a> </p></td>
-    <td valign="middle"> <p align="center">  75 / 10146  </p></td>
-    <td valign="middle"> <p align="center">  27 / 4589   </p></td>
-    <td valign="middle"> <p align="center">  25 / 4083   </p></td>
-    <td valign="middle"> <p align="center">  2255        </p></td>
+    <td> <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">TACoS</a></td>
+    <td> <p align="center" valign="middle">  <a href="https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing">C3D</a> </p></td>
+    <td> <p align="center" valign="middle">  75 / 10146  </p></td>
+    <td> <p align="center" valign="middle">  27 / 4589   </p></td>
+    <td> <p align="center" valign="middle">  25 / 4083   </p></td>
+    <td> <p align="center" valign="middle">  2255        </p></td>
   </tr>
   <tr>
-    <td valign="middle">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></td>
-    <td valign="middle"> <p align="center">  <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a> </p></td>
-    <td valign="middle"> <p align="center">  8511 / 33005  </p></td>
-    <td valign="middle"> <p align="center">  1094 / 4180   </p></td>
-    <td valign="middle"> <p align="center">  1037 / 4021   </p></td>
-    <td valign="middle"> <p align="center">  7523          </p></td>
+    <td>   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></td>
+    <td> <p align="center" valign="middle">  <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a> </p></td>
+    <td> <p align="center" valign="middle">  8511 / 33005  </p></td>
+    <td> <p align="center" valign="middle">  1094 / 4180   </p></td>
+    <td> <p align="center" valign="middle">  1037 / 4021   </p></td>
+    <td> <p align="center" valign="middle">  7523          </p></td>
   </tr>
   <tr>
-    <td valign="middle">   <a href="https://allenai.org/plato/charades/">Charades-STA</a> </p></td>
-    <td valign="middle"> <p align="center">  <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a><br/><a href="https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing">I3D (LGI)</a><br/><a href="https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing">I3D (DRN)</a> </p></td>
-    <td valign="middle"> <p align="center">  5336 / 12404  </p></td>
-    <td valign="middle"> <p align="center">  0 / 0         </p></td>
-    <td valign="middle"> <p align="center">  1334 / 3720   </p></td>
-    <td valign="middle"> <p align="center">  1289          </p></td>
+    <td>   <a href="https://allenai.org/plato/charades/">Charades-STA</a> </p></td>
+    <td> <p align="center" valign="middle">  <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a><br/><a href="https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing">I3D (LGI)</a><br/><a href="https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing">I3D (DRN)</a> </p></td>
+    <td> <p align="center" valign="middle">  5336 / 12404  </p></td>
+    <td> <p align="center" valign="middle">  0 / 0         </p></td>
+    <td> <p align="center" valign="middle">  1334 / 3720   </p></td>
+    <td> <p align="center" valign="middle">  1289          </p></td>
   </tr>
 </table>
 
