@@ -34,13 +34,66 @@ The task is also usually referred to as:
 
 # 01 - Datasets
   
-|Dataset | Features        | Train            | Val        | Test         | Vocab. Size |
+<!-- |Dataset | Features        | Train            | Val        | Test         | Vocab. Size |
 |---     | :---:           | :---:            | :---:      | :---:        | :---:       |
 |        | Download link   | <td colspan="3">N. videos / N. queries</td>    |  (Unique words) 
 | [ActivityNet Captions](http://cs.stanford.edu/people/ranjaykrishna/densevid/) | [C3D](https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing) | 10009 / 37421 | 4917 / 17505 (val1) <br/> 4885 / 17031 (val2)| 5044 / ? | 15406
 | [TACoS](http://www.coli.uni-saarland.de/projects/smile/page.php?id=software)  | [C3D](https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing) | 75 / 10146 |  27 / 4589 | 25 / 4083 | 2255
 | [DiDeMo](<https://github.com/LisaAnne/LocalizingMoments>)                     | [VGG16](https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing) <br/> [Flow](https://drive.google.com/file/d/1i888CLCGdHyJ_agbDB9ePjOFOvL2WB5G/view?usp=sharing)| 8511 / 33005 | 1094 / 4180 | 1037 / 4021 | 7523
-| [Charades-STA](<https://allenai.org/plato/charades/>)                         | [VGG16](https://drive.google.com/file/d/1P5qCMOsCdDAgF8ej9HOfgZYv3XqR8koy/view?usp=sharing)<br/>[I3D (LGI)](https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing)<br/>[I3D (DRN)](https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing) | 5336 / 12404 | 0 / 0 | 1334 / 3720 | 1289
+| [Charades-STA](<https://allenai.org/plato/charades/>)                         | [VGG16](https://drive.google.com/file/d/1P5qCMOsCdDAgF8ej9HOfgZYv3XqR8koy/view?usp=sharing)<br/>[I3D (LGI)](https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing)<br/>[I3D (DRN)](https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing) | 5336 / 12404 | 0 / 0 | 1334 / 3720 | 1289 -->
+
+
+<table rules="rows">
+  <tr>
+    <td>Dataset</td>
+    <td style="text-align:center">Features</td>
+    <td style="text-align:center">Train</td>
+    <td style="text-align:center">Val</td>
+    <td style="text-align:center">Test</td>
+    <td style="text-align:center">Vocab. Size</td>
+
+  </tr>
+  <tr>
+    <td></td>
+    <td style="text-align:center">Download link </td>
+    <td colspan="3" style="text-align:center">N. videos / N. queries</td>
+    <td style="text-align:center">(Unique words) </td>
+  </tr>
+  <tr>
+    <td style="text-align:left">   <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a></td>
+    <td style="text-align:center"> <a href="https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing">C3D</a></td>
+    <td style="text-align:center"> 10009 / 37421 </td>
+    <td style="text-align:center"> 4917 / 17505 (val1)  <br/> 4885 / 17031 (val2) </td>
+    <td style="text-align:center"> 5044 / ?</td>
+    <td style="text-align:center"> 15406   </td>
+  </tr>
+  <tr>
+    <td style="text-align:left">   <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">TACoS</a></td>
+    <td style="text-align:center"> <a href="https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing">C3D</a></td>
+    <td style="text-align:center"> 75 / 10146 </td>
+    <td style="text-align:center"> 27 / 4589  </td>
+    <td style="text-align:center"> 25 / 4083  </td>
+    <td style="text-align:center"> 2255   </td>
+  </tr>
+  <tr>
+    <td style="text-align:left">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a></td>
+    <td style="text-align:center"> <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a></td>
+    <td style="text-align:center"> 8511 / 33005 </td>
+    <td style="text-align:center"> 1094 / 4180  </td>
+    <td style="text-align:center"> 1037 / 4021  </td>
+    <td style="text-align:center"> 7523         </td>
+  </tr>
+  <tr>
+    <td style="text-align:left">   <a href="https://allenai.org/plato/charades/">Charades-STA</a></td>
+    <td style="text-align:center"> <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a><br/><a href="https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing">I3D (LGI)</a><br/><a href="https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing">I3D (DRN)</a></td>
+    <td style="text-align:center"> 5336 / 12404 </td>
+    <td style="text-align:center"> 0 / 0        </td>
+    <td style="text-align:center"> 1334 / 3720  </td>
+    <td style="text-align:center"> 1289         </td>
+  </tr>
+</table>
+
+
 
 <br/><br/>
 
