@@ -37,11 +37,11 @@ The task is also usually referred to as:
 <table style="table-layout: fixed; margin: 0; padding: 0; ">
   <colgroup>
        <col span="0" style="width: 10%;">
-       <col span="0" style="width: 15%;">
+       <col span="0" style="width: 10%;">
        <col span="0" style="width: 15%;">
        <col span="0" style="width: 30%;">
-       <col span="0" style="width: 15%;">
-       <col span="0" style="width: 15%;">
+       <col span="0" style="width: 20%;">
+       <col span="0" style="width: 10%;">
     </colgroup>
   <tr>
     <td> Dataset</td>
