@@ -27,7 +27,7 @@ The task is also usually referred as Single Video Moment Retrieval (SVMR) or Tem
   - [Analysis](#Analysis)
   - [Early works](#Early%20works) - [2017](#2017) - [2018](#2018) - [2019](#2019) - [2020](#2020) - [2021](#2021)
 
-<br/><br/>
+<br/>
 
 # 01 - Datasets
   
