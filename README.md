@@ -35,7 +35,7 @@ The task is also usually referred to as:
 # 01 - Datasets
 
 <table style="border-collapse: collapse; ">
-  <tr style="padding: 0;">
+  <tr style="padding: 0; page-break-inside: avoid;">
     <td style="padding: 0;"> Dataset</td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">   Features (link) </p></p></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">   Train </p></p></td>
@@ -43,13 +43,13 @@ The task is also usually referred to as:
     <td style="padding: 0;"> <p valign="middle"> <p align="center">   Test </p></p></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">   Vocab. Size </p></p></td>
   </tr>
-  <tr style="padding: 0;">
+  <tr style="padding: 0;" page-break-inside: avoid;>
     <td style="padding: 0;"></td>
     <td style="padding: 0;"></td>
     <td colspan="3"  valign="middle"> <p valign="middle"> <p align="center">  N. videos / N. queries </p></p></td>
     <td  valign="middle"> <p valign="middle"> <p align="center">   (Unique words) </td>
   </tr>
-  <tr style="padding: 0;">
+  <tr style="padding: 0;" page-break-inside: avoid;>
     <td style="padding: 0;"> <p align="left">  <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a> </p> </td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    <a href="https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing">C3D</a></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    10009 / 37421  </p></p></td>
@@ -57,7 +57,7 @@ The task is also usually referred to as:
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    5044 / ?  </p></p></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    15406     </p></p></td>
   </tr>
-  <tr style="padding: 0;">
+  <tr style="padding: 0;" page-break-inside: avoid;>
     <td style="padding: 0;"> <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">TACoS</a></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    <a href="https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing">C3D</a> </p></p></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    75 / 10146  </p></p></td>
@@ -65,7 +65,7 @@ The task is also usually referred to as:
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    25 / 4083   </p></p></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    2255        </p></p></td>
   </tr>
-  <tr style="padding: 0;">
+  <tr style="padding: 0;" page-break-inside: avoid;>
     <td style="padding: 0;">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></p></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a> </p></p></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    8511 / 33005  </p></p></td>
@@ -73,7 +73,7 @@ The task is also usually referred to as:
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    1037 / 4021   </p></p></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    7523          </p></p></td>
   </tr>
-  <tr style="padding: 0;">
+  <tr style="padding: 0;" page-break-inside: avoid;>
     <td style="padding: 0;">   <a href="https://allenai.org/plato/charades/">Charades-STA</a> </p></p></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a><br/><a href="https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing">I3D (LGI)</a><br/><a href="https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing">I3D (DRN)</a> </p></p></td>
     <td style="padding: 0;"> <p valign="middle"> <p align="center">    5336 / 12404  </p></p></td>
