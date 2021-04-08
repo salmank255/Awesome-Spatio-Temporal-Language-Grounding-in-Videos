@@ -7,7 +7,7 @@
 A curated list of Natural Language Grounding in Videos papers. <br/>
 The task is also usually referred as Single Video Moment Retrieval (SVMR) or Temporal Activity Localization with Language (TALL).
 
-<br/><br/>
+<br/>
 
 ## Task definition:
 
@@ -17,7 +17,7 @@ The task is also usually referred as Single Video Moment Retrieval (SVMR) or Tem
 
   <div align="center"><img height="300px" src="https://drive.google.com/uc?export=view&id=1OsY4636sI8hRoJOhSSJ-kJzecr7GUc4C"></div>
 
-<br/><br/>
+<br/>
 
 # 00 - Table of Contents
 
