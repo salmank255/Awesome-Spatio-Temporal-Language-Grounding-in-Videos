@@ -4,8 +4,11 @@
   <img width="250" src="https://camo.githubusercontent.com/1131548cf666e1150ebd2a52f44776d539f06324/68747470733a2f2f63646e2e7261776769742e636f6d2f73696e647265736f726875732f617765736f6d652f6d61737465722f6d656469612f6c6f676f2e737667" "Awesome!">
 </p>
 
-A curated list of Natural Language Grounding in Videos papers. <br/>
-The task is also usually referred as Single Video Moment Retrieval (SVMR) or Temporal Activity Localization with Language (TALL).
+A curated list of Temporal Sentence Grounding in Videos papers and benchmarks.  <br/>
+The task is also usually referred to as:
+- Single Video Moment Retrieval (SVMR) 
+- Temporal Activity Localization via Language Query (TALL)
+- Natural Language Grounding in Videos.
 
 <br/>
 
