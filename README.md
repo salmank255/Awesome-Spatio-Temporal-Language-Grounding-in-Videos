@@ -34,14 +34,14 @@ The task is also usually referred to as:
 
 # 01 - Datasets
 
-<table style="border-collapse: collapse; ">
+<table style="table-layout: fixed; margin: 0; padding: 0; ">
   <colgroup>
-       <col span="1" style="width: 10%;">
-       <col span="1" style="width: 15%;">
-       <col span="1" style="width: 15%;">
-       <col span="1" style="width: 30%;">
-       <col span="1" style="width: 15%;">
-       <col span="1" style="width: 15%;">
+       <col span="0" style="width: 10%;">
+       <col span="0" style="width: 15%;">
+       <col span="0" style="width: 15%;">
+       <col span="0" style="width: 30%;">
+       <col span="0" style="width: 15%;">
+       <col span="0" style="width: 15%;">
     </colgroup>
   <tr>
     <td> Dataset</td>
