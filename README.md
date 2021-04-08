@@ -36,10 +36,10 @@ The task is also usually referred to as:
 
 <table style="border-collapse: collapse; ">
   <colgroup>
+       <col span="1" style="width: 10%;">
        <col span="1" style="width: 15%;">
        <col span="1" style="width: 15%;">
-       <col span="1" style="width: 15%;">
-       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 30%;">
        <col span="1" style="width: 15%;">
        <col span="1" style="width: 15%;">
     </colgroup>
