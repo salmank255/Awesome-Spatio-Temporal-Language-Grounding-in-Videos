@@ -36,7 +36,7 @@ The task is also usually referred to as:
   
 |Dataset | Features        | Train            | Val        | Test         | Vocab. Size |
 |---     | :---:           | :---:            | :---:      | :---:        | :---:       |
-|        | Download link   | <td colspan="2">N. videos / N. queries</td>  | (Unique words) 
+|        | Download link   <td colspan="2">N. videos / N. queries</td>     (Unique words) 
 | [ActivityNet Captions](http://cs.stanford.edu/people/ranjaykrishna/densevid/) | [C3D](https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing) | 10009 / 37421 | 4917 / 17505 (val1) <br/> 4885 / 17031 (val2)| 5044 / ? | 15406
 | [TACoS](http://www.coli.uni-saarland.de/projects/smile/page.php?id=software)  | [C3D](https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing) | 75 / 10146 |  27 / 4589 | 25 / 4083 | 2255
 | [DiDeMo](<https://github.com/LisaAnne/LocalizingMoments>)                     | [VGG16](https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing) <br/> [Flow](https://drive.google.com/file/d/1i888CLCGdHyJ_agbDB9ePjOFOvL2WB5G/view?usp=sharing)| 8511 / 33005 | 1094 / 4180 | 1037 / 4021 | 7523
