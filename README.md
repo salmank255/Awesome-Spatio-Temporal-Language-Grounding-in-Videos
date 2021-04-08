@@ -44,7 +44,7 @@ The task is also usually referred to as:
        <col span="0" style="width: 10%;">
     </colgroup>
   <tr>
-    <td> <p valign="middle"> <p align="center">   Dataset         </p></p></td>
+    <td> <p valign="middle"> <p align="left">     Dataset         </p></p></td>
     <td> <p valign="middle"> <p align="center">   Features (link) </p></p></td>
     <td> <p valign="middle"> <p align="center">   Train           </p></p></td>
     <td> <p valign="middle"> <p align="center">   Val             </p></p></td>
@@ -58,7 +58,7 @@ The task is also usually referred to as:
     <td>             <p valign="middle"> <p align="center"> (Unique words)          </p></p></td>
   </tr>
   <tr>
-    <td> <p valign="middle"> <p align="center"> <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a>             </p></p></td>
+    <td> <p valign="middle"> <p align="left">   <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a>             </p></p></td>
     <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing">C3D</a> </p></p></td>
     <td> <p valign="middle"> <p align="center"> 10009 / 37421                                   </p></p></td>
     <td> <p valign="middle"> <p align="center"> 4917 / 17505 (val1)  <br/> 4885 / 17031 (val2)  </p></p></td>
@@ -66,7 +66,7 @@ The task is also usually referred to as:
     <td> <p valign="middle"> <p align="center"> 15406                                           </p></p></td>
   </tr>
   <tr>
-    <td> <p valign="middle"> <p align="center"> <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">TACoS</a>              </p></p></td>
+    <td> <p valign="middle"> <p align="left">   <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">TACoS</a>              </p></p></td>
     <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing">C3D</a> </p></p></td>
     <td> <p valign="middle"> <p align="center"> 75 / 10146  </p></p></td>
     <td> <p valign="middle"> <p align="center"> 27 / 4589   </p></p></td>
@@ -74,7 +74,7 @@ The task is also usually referred to as:
     <td> <p valign="middle"> <p align="center"> 2255        </p></p></td>
   </tr>
   <tr>
-    <td> <p valign="middle"> <p align="center"> <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></p></td>
+    <td> <p valign="middle"> <p align="left">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></p></td>
     <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a> </p></p></td>
     <td> <p valign="middle"> <p align="center"> 8511 / 33005  </p></p></td>
     <td> <p valign="middle"> <p align="center"> 1094 / 4180   </p></p></td>
@@ -82,7 +82,7 @@ The task is also usually referred to as:
     <td> <p valign="middle"> <p align="center"> 7523          </p></p></td>
   </tr>
   <tr>
-    <td> <p valign="middle"> <p align="center"> <a href="https://allenai.org/plato/charades/">Charades-STA</a> </p></p></td>
+    <td> <p valign="middle"> <p align="left">   <a href="https://allenai.org/plato/charades/">Charades-STA</a> </p></p></td>
     <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a><br/><a href="https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing">I3D (LGI)</a><br/><a href="https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing">I3D (DRN)</a> </p></p></td>
     <td> <p valign="middle"> <p align="center"> 5336 / 12404  </p></p></td>
     <td> <p valign="middle"> <p align="center"> 0 / 0         </p></p></td>
