@@ -33,29 +33,19 @@ The task is also usually referred to as:
 <br/>
 
 # 01 - Datasets
-  
-<!-- |Dataset | Features        | Train            | Val        | Test         | Vocab. Size |
-|---     | :---:           | :---:            | :---:      | :---:        | :---:       |
-|        | Download link   | <td colspan="3">N. videos / N. queries</td>    |  (Unique words) 
-| [ActivityNet Captions](http://cs.stanford.edu/people/ranjaykrishna/densevid/) | [C3D](https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing) | 10009 / 37421 | 4917 / 17505 (val1) <br/> 4885 / 17031 (val2)| 5044 / ? | 15406
-| [TACoS](http://www.coli.uni-saarland.de/projects/smile/page.php?id=software)  | [C3D](https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing) | 75 / 10146 |  27 / 4589 | 25 / 4083 | 2255
-| [DiDeMo](<https://github.com/LisaAnne/LocalizingMoments>)                     | [VGG16](https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing) <br/> [Flow](https://drive.google.com/file/d/1i888CLCGdHyJ_agbDB9ePjOFOvL2WB5G/view?usp=sharing)| 8511 / 33005 | 1094 / 4180 | 1037 / 4021 | 7523
-| [Charades-STA](<https://allenai.org/plato/charades/>)                         | [VGG16](https://drive.google.com/file/d/1P5qCMOsCdDAgF8ej9HOfgZYv3XqR8koy/view?usp=sharing)<br/>[I3D (LGI)](https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing)<br/>[I3D (DRN)](https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing) | 5336 / 12404 | 0 / 0 | 1334 / 3720 | 1289 -->
-
 
 <table rules="rows">
   <tr>
     <td>Dataset</td>
-    <td> <p align="center"> Features </p></td>
+    <td> <p align="center"> Features (link) </p></td>
     <td> <p align="center"> Train </p></td>
     <td> <p align="center"> Val </p></td>
     <td> <p align="center"> Test </p></td>
     <td> <p align="center"> Vocab. Size </p></td>
-
   </tr>
   <tr>
     <td></td>
-    <td> <p align="center"> Download link </td>
+    <td></td>
     <td colspan="3"> <p align="center">N. videos / N. queries </p></td>
     <td> <p align="center"> (Unique words) </td>
   </tr>
@@ -76,7 +66,7 @@ The task is also usually referred to as:
     <td> <p align="center">  2255        </p></td>
   </tr>
   <tr>
-    <td style="text-align:left">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a </p>></td>
+    <td style="text-align:left">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></td>
     <td> <p align="center">  <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a> </p></td>
     <td> <p align="center">  8511 / 33005  </p></td>
     <td> <p align="center">  1094 / 4180   </p></td>
