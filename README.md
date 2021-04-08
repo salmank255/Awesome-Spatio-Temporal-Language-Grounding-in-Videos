@@ -34,7 +34,10 @@ The task is also usually referred to as:
 
 # 01 - Datasets
 
-<table rules="rows">
+<table {
+  border-collapse:separate; 
+  border-spacing: 0 1em;
+}>
   <tr>
     <td>Dataset</td>
     <td> <p valign="middle"> <p align="center">   Features (link) </p></p></td>
