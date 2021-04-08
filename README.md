@@ -100,10 +100,17 @@ The task is also usually referred to as:
 
 * NOTE: For Activitynet-Captions, val1 / val2 or a combination of the two splits is used for evaluation. The most common choice is to use val1 as a validation set and val2 as a testing set. This is necessary as the official test set is withheld for competitions purposes. 
 
-Methods can be classified in:
+### Methods can be classified in:
 * FS: Fully supervised
 * WS: Weakly supervised
 * RL: Reinforcement Learning
+
+### Format
+```markdown
+* `Model` [ID](link) | `Features` |  R@k IoU=m |...| R@k IoU=m | Method |
+```
+
+Hit the paper `ID` to fast-forward to the paper details (link to pdf, venue, year, author and link to GitHub repo).
 
 <br/>
 
