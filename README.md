@@ -45,7 +45,7 @@ The task is also usually referred to as:
     </colgroup>
   <tr>
     <td> <p valign="middle"> <p align="left">     Dataset         </p></p></td>
-    <td> <p valign="middle"> <p align="center">   Features (link) </p></p></td>
+    <td> <p valign="middle"> <p align="center">   Features<br/>(link) </p></p></td>
     <td> <p valign="middle"> <p align="center">   Train           </p></p></td>
     <td> <p valign="middle"> <p align="center">   Val             </p></p></td>
     <td> <p valign="middle"> <p align="center">   Test            </p></p></td>
