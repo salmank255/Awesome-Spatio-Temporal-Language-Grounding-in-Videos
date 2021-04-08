@@ -56,7 +56,7 @@ The task is also usually referred to as:
   <tr>
     <td></td>
     <td> <p align="center"> Download link </td>
-    <td colspan="3" style="text-align:center">N. videos / N. queries</td>
+    <td colspan="3"> <p align="center">N. videos / N. queries </p></td>
     <td> <p align="center"> (Unique words) </td>
   </tr>
   <tr>
