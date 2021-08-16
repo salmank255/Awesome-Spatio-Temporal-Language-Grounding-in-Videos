@@ -149,7 +149,7 @@ Hit the paper `ID` to fast-forward to the paper details (link to pdf, venue, yea
 | FIAN          [[55]](#2020) | C3D | 64.10 | 47.90 | 29.81 | 87.59 | 77.64 | 59.66 | FS
 | CSMGAN        [[56]](#2020) | C3D | 68.52 | 49.11 | 29.15 | 87.68 | 77.43 | 59.63 | FS
 | SMRN          [[58]](#2020) | C3D |   -   | 42.97 | 26.79 |   -   | 76.46 | 60.51 | FS
-| VLG-Net       [[67]](#2020) | C3D |   -   | 46.32 | 29.82 |   -   | 77.15 | 63.33 | FS
+| VLG-Net       [[67]](#2021) | C3D |   -   | 46.32 | 29.82 |   -   | 77.15 | 63.33 | FS
 
 <br/>
 
@@ -200,7 +200,7 @@ Hit the paper `ID` to fast-forward to the paper details (link to pdf, venue, yea
 | CSMGAN        [[56]](#2020)|   C3D    | 42.74 | 33.90 | 27.09 |   -   | 68.97 | 53.98 | 41.22 |   -   | FS 
 | SMRN          [[58]](#2020)|   C3D    | 50.44 | 42.49 | 32.07 |   -   | 77.28 | 66.63 | 52.84 |   -   | FS
 | LGN           [[64]](#2020)|   C3D    | 52.46 | 41.71 | 30.57 |   -   | 76.86 | 63.06 | 50.76 |   -   | FS
-| VLG-Net       [[67]](#2020)|   C3D    | 57.21 | 45.46 | 34.19 |   -   | 81.80 | 70.38 | 56.56 |   -   | FS 
+| VLG-Net       [[67]](#2021)|   C3D    | 57.21 | 45.46 | 34.19 |   -   | 81.80 | 70.38 | 56.56 |   -   | FS 
 
 <br/>
 
@@ -220,7 +220,7 @@ Hit the paper `ID` to fast-forward to the paper details (link to pdf, venue, yea
 | SLTA          [[31]](#2019)| VGG16+FRCNN | 30.92 | 17.16 |   -   | 70.18 | 33.87 |   -   | FS
 |VLANet         [[44]](#2020)|    VGG16    |   -   |   -   | 19.32 |   -   |   -   | 65.68 | WS
 | RTBPN         [[51]](#2020)| VGG16<br/>Flow<br/>VGG16+Flow|   -<br/>-<br/>   | -<br/>-<br/>- | 20.38<br/>20.52<br/>20.79  | -<br/>-<br/>- | -<br/>-<br/>- | 55.88<br/>57.72<br/>60.26 | WS 
-| VLG-Net       [[67]](#2020)|    VGG16    | 33.35 | 25.57 | 25.57 | 88.86 | 71.72 | 71.65 | FS
+| VLG-Net       [[67]](#2021)|    VGG16    | 33.35 | 25.57 | 25.57 | 88.86 | 71.72 | 71.65 | FS
 | LoGAN         [[69]](#2020)|  VGG16+Flow |   -   |    -  | 39.20 |   -   |   -   | 64.04 | WS 
  
 <br/>
@@ -383,7 +383,6 @@ Markdown format:
 |64|`ACRM`| `ArXiv`  | [Frame-wise Cross-modal Match for Video Moment Retrieval](https://arxiv.org/abs/2009.10434) | Tang et al | 
 |65|`CMA` | `ArXiv`  | [A Simple Yet Effective Method for Video Temporal Grounding with Cross-Modality Attention](https://arxiv.org/pdf/2009.11232.pdf) |  Zhang et al| 
 |66|`--`  | `ArXiv`  | [Natural Language Video Localization: A Revisit in Span-based Question Answering Framework](https://arxiv.org/pdf/2102.13558.pdf) | Zhang et al | 
-|67|`VLG-Net`| `ArXiv`  | [VLG-Net: Video-Language Graph Matching Network for Video Grounding](https://arxiv.org/pdf/2011.10132.pdf) | Soldan et al | [GitHub](https://github.com/Soldelli/VLG-Net)
 <!-- |``| `` | [Multi-Scale 2D Temporal Adjacent Networks for Moment Localization with Natural Language](https://arxiv.org/pdf/2012.02646.pdf) - Songyang Zhang et al, `TPAMI submission`. -->
 
 <br/>
@@ -392,6 +391,7 @@ Markdown format:
 
 |ID| Model | Venue | Title | Authors | Code  |
 | :---: | :--- | :--- | --- | ---------- | :---: |
+|67|`VLG-Net`| `ICCVW`  | [VLG-Net: Video-Language Graph Matching Network for Video Grounding](https://arxiv.org/pdf/2011.10132.pdf) | Soldan et al | [GitHub](https://github.com/Soldelli/VLG-Net)
 |68|`LoGAN`| `WACV`  | [LoGAN: Latent Graph Co-Attention Network for Weakly-Supervised Video Moment Retrieval](https://openaccess.thecvf.com/content/WACV2021/papers/Tan_LoGAN_Latent_Graph_Co-Attention_Network_for_Weakly-Supervised_Video_Moment_Retrieval_WACV_2021_paper.pdf) | Tan et al | 
 |69|`CBLN` | `arxiv` | [Context-aware Biaffine Localizing Network for Temporal Sentence Grounding](https://arxiv.org/pdf/2103.11555.pdf) | Liu et al | [GitHub](https://github.com/liudaizong/CBLN)
 |70|`DeNet`| `arxiv` | [Embracing Uncertainty: Decoupling and De-bias for Robust Temporal Grounding](https://arxiv.org/pdf/2103.16848.pdf) | Zhou et al |
