@@ -32,7 +32,11 @@ The task is also usually referred to as:
 
 <br/>
 
-# 01 - Datasets
+# 01 - Datasets 
+
+<br/>
+
+## Videos Statistics
 
 <table style="table-layout: fixed; margin: 0; padding: 0; ">
   <colgroup>
@@ -46,50 +50,199 @@ The task is also usually referred to as:
   <tr>
     <td> <p valign="middle"> <p align="left">     Dataset         </p></p></td>
     <td> <p valign="middle"> <p align="center">   Features<br/>(Download) </p></p></td>
-    <td> <p valign="middle"> <p align="center">   Train           </p></p></td>
-    <td> <p valign="middle"> <p align="center">   Val             </p></p></td>
-    <td> <p valign="middle"> <p align="center">   Test            </p></p></td>
-    <td> <p valign="middle"> <p align="center">   Vocab.<br/>Size </p></p></td>
+    <td colspan="3"> <p valign="middle"> <p align="center">  Number of Videos </p></p></td>
+    <td> <p valign="middle"> <p align="center">   Avg.<br/>Duration </p></p></td>
+    <td> <p valign="middle"> <p align="center">   Total<br/>Duration </p></p></td>
   </tr>
   <tr>
     <td></td>
     <td></td>
-    <td colspan="3"> <p valign="middle"> <p align="center">  N. videos / N. queries </p></p></td>
-    <td>             <p valign="middle"> <p align="center">  Unique<br/>words)      </p></p></td>
-  </tr>
-  <tr>
-    <td> <p valign="middle"> <p align="left">   <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a>             </p></p></td>
-    <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing">C3D</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 10009 / 37421                                   </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 4917 / 17505 (val1)<br/>4885 / 17031 (val2)     </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 5044 / ?                                        </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 15406                                           </p></p></td>
+    <td> <p valign="middle"> <p align="center"> Train   </p></p></td>
+    <td> <p valign="middle"> <p align="center"> Val     </p></p></td>
+    <td> <p valign="middle"> <p align="center"> Test    </p></p></td>
+    <td><p valign="middle"> <p align="center">  Minutes </p></p></td>
+    <td><p valign="middle"> <p align="center">  Hours   </p></p></td>
   </tr>
   <tr>
     <td> <p valign="middle"> <p align="left">   <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">TACoS</a>              </p></p></td>
     <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing">C3D</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 75 / 10146  </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 27 / 4589   </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 25 / 4083   </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 2255        </p></p></td>
-  </tr>
-  <tr>
-    <td> <p valign="middle"> <p align="left">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 8511 / 33005  </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 1094 / 4180   </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 1037 / 4021   </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 7523          </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 75    </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 27    </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 25    </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 4.78  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 10.1  </p></p></td>
   </tr>
   <tr>
     <td> <p valign="middle"> <p align="left">   <a href="https://allenai.org/plato/charades/">Charades-STA</a> </p></p></td>
     <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a><br/><a href="https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing">I3D (LGI)</a><br/><a href="https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing">I3D (DRN)</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 5336 / 12404  </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 0 / 0         </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 1334 / 3720   </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 1289          </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 5336 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0    </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1334 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.50 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 57.1 </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 8511 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1094 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1037 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.50 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 88.7 </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a>             </p></p></td>
+    <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing">C3D</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 10009  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 4917 (val1)<br/>4885(val2) </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 5044   </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1.96   </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 487.6  </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="">MAD</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center"> <a href="">CLIP</a></p></p></td>
+    <td> <p valign="middle"> <p align="center"> 488    </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 50     </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 112    </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 110.77 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1207.3 </p></p></td>
   </tr>
 </table>
+
+<br/>
+
+## Sentences Statistics
+
+<table style="table-layout: fixed; margin: 0; padding: 0; ">
+  <colgroup>
+       <col span="0" style="width: 10%;">
+       <col span="0" style="width: 10%;">
+       <col span="0" style="width: 20%;">
+       <col span="0" style="width: 30%;">
+       <col span="0" style="width: 20%;">
+       <col span="0" style="width: 10%;">
+    </colgroup>
+  <tr>
+    <td> <p valign="middle"> <p align="left">     Dataset         </p></p></td>
+    <td> <p valign="middle"> <p align="center">   Features<br/>(Download) </p></p></td>
+    <td colspan="3"> <p valign="middle"> <p align="center">  Number of Queries </p></p></td>
+    <td> <p valign="middle"> <p align="center">   Avg.<br/>Tokens </p></p></td>
+    <td> <p valign="middle"> <p align="center">   Total<br/>Tokens </p></p></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td> <p valign="middle"> <p align="center"> Train   </p></p></td>
+    <td> <p valign="middle"> <p align="center"> Val     </p></p></td>
+    <td> <p valign="middle"> <p align="center"> Test    </p></p></td>
+    <td><p valign="middle"> <p align="center">   </p></p></td>
+    <td><p valign="middle"> <p align="center"> (Millions)  </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">TACoS</a>              </p></p></td>
+    <td> <p valign="middle"> <p align="center">       </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 10146 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 4589  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 4083  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 10.5  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.2   </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="https://allenai.org/plato/charades/">Charades-STA</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center">       </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 12404 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0     </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 3720  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 7.2   </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.1   </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center">       </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 33005 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 4180  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 4021  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 8.0   </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.3   </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a>             </p></p></td>
+    <td> <p valign="middle"> <p align="center">       </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 37421 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 17505 (val1)<br/>17031(val2) </p></p></td>
+    <td> <p valign="middle"> <p align="center"> ?     </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 14.8  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1.0   </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="">MAD</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center"> <a href="">CLIP</a></p></p></td>
+    <td> <p valign="middle"> <p align="center"> 280000    </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 32000     </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 72000    </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 12.7 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 5.0 </p></p></td>
+  </tr>
+</table>
+
+</br>
+
+## Language Statistics - (Unique tokens)
+
+<table style="table-layout: fixed; margin: 0; padding: 0; ">
+  <colgroup>
+       <col span="0" style="width: 10%;">
+       <col span="0" style="width: 10%;">
+       <col span="0" style="width: 20%;">
+       <col span="0" style="width: 30%;">
+       <col span="0" style="width: 20%;">
+       <col span="0" style="width: 10%;">
+    </colgroup>
+  <tr>
+    <td> <p valign="middle"> <p align="left">    Dataset    </p></p></td>
+    <td> <p valign="middle"> <p align="center">  Adjectives </p></p></td>
+    <td> <p valign="middle"> <p align="center">  Nouns      </p></p></td>
+    <td> <p valign="middle"> <p align="center">  Verbs      </p></p></td>
+    <td> <p valign="middle"> <p align="center">  Vocabulary </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">TACoS</a>              </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.2 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.9 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.6 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 2.3 K  </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="https://allenai.org/plato/charades/">Charades-STA</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.1 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.6 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.4 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1.3 K  </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 0.6 K </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 4.1 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1.9 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 7.5 K  </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a>             </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1.1 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 7.4 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 3.7 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 15.4 K </p></p></td>
+  </tr>
+  <tr>
+    <td> <p valign="middle"> <p align="left">   <a href="">MAD</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 5.3 K  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 35.5 K </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 13.1 K </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 61.4 K </p></p></td>
+  </tr>
+</table>
+
 
 
 
@@ -376,7 +529,7 @@ Markdown format:
 |57|`--`      | `DAVU`  | [Cross-Modality Video Segment Retrieval with Ensemble Learning](https://link.springer.com/chapter/10.1007/978-3-030-30671-7_5#Sec12) | Yu et al | 
 |58|`SMRN`    | `ISNN`  | [Semantic Modulation Based Residual Network for Temporal Language Queries Grounding in Video](https://link.springer.com/chapter/10.1007/978-3-030-64221-1_11) |Chen et al | 
 |59|`--`    | `Journal`  | [Cross-modal video moment retrieval based on visual-textual relationship alignment](https://engine.scichina.com/publisher/scp/journal/SSI/50/6/10.1360/SSI-2019-0292?slug=fulltext) |  Chen et al| 
-|60|``    | `ArXiv`  | [Video Moment Retrieval via Natural Language Queries](https://arxiv.org/abs/2009.02406) | Yu et al | 
+|60|`--`    | `ArXiv`  | [Video Moment Retrieval via Natural Language Queries](https://arxiv.org/abs/2009.02406) | Yu et al | 
 |61|`WSTG`| `ArXiv`  | [Look Closer to Ground Better: Weakly-Supervised Temporal Grounding of Sentence in Video](https://arxiv.org/pdf/2001.09308.pdf) | Chen et al | 
 |62|`MARN`| `ArXiv`  | [Weakly-Supervised Multi-Level Attentional Reconstruction Network for Grounding Textual Queries in Videos](https://arxiv.org/pdf/2003.07048.pdf) | Song et al | 
 |63|`LGN` | `ArXiv`  | [Language Guided Networks for Cross-modal Moment Retrieval](https://arxiv.org/pdf/2006.10457.pdf) | Liu et al | 
@@ -393,8 +546,57 @@ Markdown format:
 | :---: | :--- | :--- | --- | ---------- | :---: |
 |67|`VLG-Net`| `ICCVW`  | [VLG-Net: Video-Language Graph Matching Network for Video Grounding](https://arxiv.org/pdf/2011.10132.pdf) | Soldan et al | [GitHub](https://github.com/Soldelli/VLG-Net)
 |68|`LoGAN`| `WACV`  | [LoGAN: Latent Graph Co-Attention Network for Weakly-Supervised Video Moment Retrieval](https://openaccess.thecvf.com/content/WACV2021/papers/Tan_LoGAN_Latent_Graph_Co-Attention_Network_for_Weakly-Supervised_Video_Moment_Retrieval_WACV_2021_paper.pdf) | Tan et al | 
-|69|`CBLN` | `arxiv` | [Context-aware Biaffine Localizing Network for Temporal Sentence Grounding](https://arxiv.org/pdf/2103.11555.pdf) | Liu et al | [GitHub](https://github.com/liudaizong/CBLN)
-|70|`DeNet`| `arxiv` | [Embracing Uncertainty: Decoupling and De-bias for Robust Temporal Grounding](https://arxiv.org/pdf/2103.16848.pdf) | Zhou et al |
+|69|`CBLN` | `CVPR` | [Context-aware Biaffine Localizing Network for Temporal Sentence Grounding](https://arxiv.org/pdf/2103.11555.pdf) | Liu et al | [GitHub](https://github.com/liudaizong/CBLN)
+|70|`DeNet`| `CVPR` | [Embracing Uncertainty: Decoupling and De-bias for Robust Temporal Grounding](https://arxiv.org/pdf/2103.16848.pdf) | Zhou et al |
+|70| `DORi` |`WACV`| [DORi: Discovering Object Relationships for Moment Localization of a Natural Language Query in a Video](https://openaccess.thecvf.com/content/WACV2021/papers/Rodriguez-Opazo_DORi_Discovering_Object_Relationships_for_Moment_Localization_of_a_Natural_WACV_2021_paper.pdf) |  Rodriguez-Opazo et al | [GitHub](https://github.com/crodriguezo/DORi.git)
+|71| `` | `WACV`| [Natural Language Video Moment Localization Through Query-Controlled Temporal Convolution](https://www.ecse.rpi.edu/~rjradke/papers/zhang-wacv22.pdf) |  et al |
+|72| `` | `CVPR`| [Interventional Video Grounding With Dual Contrastive Learning](https://openaccess.thecvf.com/content/CVPR2021/papers/Nan_Interventional_Video_Grounding_With_Dual_Contrastive_Learning_CVPR_2021_paper.pdf) |  et al |
+|73| `` | `CVPR`| [Structured Multi-Level Interaction Network for Video Moment Localization via Language Query](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Structured_Multi-Level_Interaction_Network_for_Video_Moment_Localization_via_Language_CVPR_2021_paper.pdf) |  et al |
+|74| `` | `CVPR`| [Multi-Stage Aggregated Transformer Network for Temporal Language Localization in Videos](https://openaccess.thecvf.com/content/CVPR2021/papers/Zhang_Multi-Stage_Aggregated_Transformer_Network_for_Temporal_Language_Localization_in_Videos_CVPR_2021_paper.pdf) |  et al |
+|75| `` | `CVPR`| [Multi-Modal Relational Graph for Cross-Modal Video Moment Retrieval](https://openaccess.thecvf.com/content/CVPR2021/html/Zeng_Multi-Modal_Relational_Graph_for_Cross-Modal_Video_Moment_Retrieval_CVPR_2021_paper.html) |  et al |
+|76| `` | `CVPR`| [Cascaded Prediction Network via Segment Tree for Temporal Video Grounding](https://openaccess.thecvf.com/content/CVPR2021/html/Zhao_Cascaded_Prediction_Network_via_Segment_Tree_for_Temporal_Video_Grounding_CVPR_2021_paper.html) |  et al |
+|77| `` | `CVPR`| [Cross-Sentence Temporal and Semantic Relations in Video Activity Localisation](https://openaccess.thecvf.com/content/ICCV2021/papers/Huang_Cross-Sentence_Temporal_and_Semantic_Relations_in_Video_Activity_Localisation_ICCV_2021_paper.pdf) |  et al |
+|78| `` | `CVPR`| [Improving Weakly Supervised Visual Grounding by Contrastive Knowledge Distillation](https://openaccess.thecvf.com/content/CVPR2021/papers/Wang_Improving_Weakly_Supervised_Visual_Grounding_by_Contrastive_Knowledge_Distillation_CVPR_2021_paper.pdf) |  et al |
+|79| `` | `CVPR`| [Fast Video Moment Retrieval](https://openaccess.thecvf.com/content/ICCV2021/papers/Gao_Fast_Video_Moment_Retrieval_ICCV_2021_paper.pdf) |  et al |
+|80| `` | `ACL`| [Reasoning Step-by-Step: Temporal Sentence Localization in Videos via Deep Rectification-Modulation Network](https://aclanthology.org/2020.coling-main.167/) |  et al |
+|81| `` | `ACL`| [Fine-grained Semantic Alignment Network for Weakly Supervised Temporal Language Grounding](https://aclanthology.org/2021.findings-emnlp.9.pdf) |  et al |
+|82| `` | `ACM`| [Visual Co-Occurrence Alignment Learning for Weakly-Supervised Video Moment Retrieval](https://dl.acm.org/doi/pdf/10.1145/3474085.3475278) |  et al |
+|83| `` | `ACM`| [Cross Interaction Network for Natural Language Guided Video Moment Retrieval](https://dl.acm.org/doi/10.1145/3404835.3463021) |  et al |
+|84| `` | `Journal`| [MABAN: Multi-Agent Boundary-Aware Network for Natural Language Moment Retrieval](https://ieeexplore.ieee.org/abstract/document/9451629?casa_token=B2wdbvbslGMAAAAA:3c6oGK-klY3MFYSfIFbMr33gt1LMIwQL5tRW51lrWnLqJypiv42h6q2WPIitU_dptIAhr_lXWxfRKI8) |  et al |
+|85| `` | `Journal`| [Coarse-to-Fine Spatial-Temporal Relationship Inference for Temporal Sentence Grounding](https://ieeexplore.ieee.org/abstract/document/9475486) |  et al |
+|86| `` | `Journal`| [Regularized Two Granularity Loss Function for Weakly Supervised Video Moment Retrieval](https://ieeexplore.ieee.org/abstract/document/9580967) |  et al |
+|87| `` | `Journal`| [Frame-wise Cross-modal Matching for Video Moment Retrieval](https://ieeexplore.ieee.org/abstract/document/9374685) |  et al |
+|88| `` | `Journal`| [DCT-net: A deep co-interactive transformer network for video temporal grounding](https://www.sciencedirect.com/science/article/pii/S0262885621000883) |  et al |
+|89| `` | `Journal`| [Diving Into The Relations: Leveraging Semantic and Visual Structures For Video Moment Retrieval](https://ieeexplore.ieee.org/abstract/document/9428369) |  et al |
+|90| `` | `Journal`| [Context-aware network with foreground recalibration for grounding natural language in video](https://link.springer.com/article/10.1007/s00521-021-05807-z) |  et al |
+|91| `` | `Journal`| [Coarse-to-Fine Spatial-Temporal Relationship Inference for Temporal Sentence Grounding](https://ieeexplore.ieee.org/abstract/document/9475486) |  et al |
+|92| `` | `Journal`| [Multi-scale 2D Representation Learning for weakly-supervised moment retrieval](https://ieeexplore.ieee.org/abstract/document/9412712) |  et al |
+|93| `` | `Journal`| [Local Correspondence Network for Weakly Supervised Temporal Sentence Grounding](https://ieeexplore.ieee.org/abstract/document/9356448) |  et al |
+|94| `` | `Journal`| [Coarse-to-Fine Semantic Alignment for Cross-Modal Moment Localization](https://ieeexplore.ieee.org/abstract/document/9464749) |  et al |
+|95| `` | `Journal`| [Natural Language Video Localization: A Revisit in Span-based Question Answering Framework](https://ieeexplore.ieee.org/abstract/document/9361191) |  et al |
+|96| `` | `Journal`| [VSRNet: End-to-end video segment retrieval with text query](https://www.sciencedirect.com/science/article/pii/S0031320321002144) |  et al |
+|97| `` | `Journal`| [Multi-Scale 2D Temporal Adjacency Networks for Moment Localization with Natural Language](https://ieeexplore.ieee.org/abstract/document/9580623) |  et al |
+|98| `` | `Journal`| [Learning Video Moment Retrieval Without a Single Annotated Video](https://ieeexplore.ieee.org/abstract/document/9415694) |  et al |
+|99| `` | `AAAI`| [Proposal-Free Video Grounding with Contextual Pyramid Network](https://www.aaai.org/AAAI21Papers/AAAI-9134.LiK.pdf) |  et al |
+|100| `` | `AAAI`| [Dense Events Grounding in Video](http://www.muyadong.com/paper/3254_PeijunB.pdf) |  et al |
+|101| `` | `AAAI`| [Boundary Proposal Network for Two-Stage Natural Language Video Localization](https://www.aaai.org/AAAI21Papers/AAAI-6267.XiaoS.pdf) |  et al |
+|102| `` | `ICCV`| [STVGBert: A Visual-Linguistic Transformer Based Framework for Spatio-Temporal Video Grounding](https://openaccess.thecvf.com/content/ICCV2021/html/Su_STVGBert_A_Visual-Linguistic_Transformer_Based_Framework_for_Spatio-Temporal_Video_Grounding_ICCV_2021_paper.html) |  et al |
+|103| `` | `ICCV`| [Boundary-sensitive Pre-training for Temporal Localization in Videos](https://openaccess.thecvf.com/content/ICCV2021/papers/Xu_Boundary-Sensitive_Pre-Training_for_Temporal_Localization_in_Videos_ICCV_2021_paper.pdf) |  et al |
+|104| `` | `ICCV`| [Support-Set Based Cross-Supervision for Video Grounding](https://openaccess.thecvf.com/content/ICCV2021/papers/Ding_Support-Set_Based_Cross-Supervision_for_Video_Grounding_ICCV_2021_paper.pdf) |  et al |
+|105| `` | `Arxiv`| [Deconfounded Video Moment Retrieval with Causal Intervention](https://arxiv.org/pdf/2106.01534.pdf) |  et al |
+|106| `` | `Arxiv`| [Video Moment Retrieval with Text Query Considering Many-to-Many Correspondence Using Potentially Relevant Pair](https://arxiv.org/abs/2106.13566) |  et al |
+|107| `` | `Arxiv`| [Hierarchical Deep Residual Reasoning for Temporal Moment Localization](https://arxiv.org/pdf/2111.00417.pdf) |  et al |
+|108| `` | `Arxiv`| [Relation-aware Video Reading Comprehension for Temporal Language Grounding](https://arxiv.org/abs/2110.05717) |  et al |
+|109| `` | `Arxiv`| [On Pursuit of Designing Multi-modal Transformer for Video Grounding](https://arxiv.org/abs/2109.06085) |  et al |
+|110| `` | `Arxiv`| [Parallel Attention Network with Sequence Matching for Video Grounding](https://arxiv.org/pdf/2105.08481.pdf) |  et al |
+|111| `` | `Arxiv`| [Augmented 2D-TAN: A Two-stage Approach for Human-centric Spatio-Temporal Video Grounding](https://arxiv.org/abs/2106.10634) |  et al |
+|112| `` | `Arxiv`| [Self-supervised Learning for Semi-supervised Temporal Language Grounding](https://arxiv.org/abs/2109.11475) |  et al |
+|113| `` | `Arxiv`| [Progressively Guide to Attend: An Iterative Alignment Framework for Temporal Sentence Grounding](https://arxiv.org/abs/2109.06400) |  et al |
+|114| `` | `Arxiv`| [Natural Language Video Localization with Learnable Moment Proposals](https://arxiv.org/abs/2109.10678) |  et al |
+|115| `` | `Arxiv`| [A Survey on Natural Language Video Localization](https://arxiv.org/abs/2104.00234) |  et al |
+
+
+
 
 <br/><br/>
 
