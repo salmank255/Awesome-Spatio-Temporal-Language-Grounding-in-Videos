@@ -27,12 +27,12 @@ The task is also usually referred to as:
 * [01 - Datasets](#01%20-%20Datasets)
 * [02 - Benchmark Results](#02%20-%20Benchmark%20Results)
 * [03 - Papers](#03%20-%20Papers)
-  - [Analysis and Surveys](#Analysis%20and%20Surveys)
+  - [Analysis and Surveys](#Analysis and Surveys)
   - [Early works](#Early%20works) - [2017](#2017) - [2018](#2018) - [2019](#2019) - [2020](#2020) - [2021](#2021)
 
 <br/>
 
-# 01 - Datasets 
+# 01 - Datasets
 
 <br/>
 
