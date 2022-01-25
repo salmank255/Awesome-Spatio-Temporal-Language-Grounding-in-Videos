@@ -27,7 +27,7 @@ The task is also usually referred to as:
 * [01 - Datasets](#01%20-%20Datasets)
 * [02 - Benchmark Results](#02%20-%20Benchmark%20Results)
 * [03 - Papers](#03%20-%20Papers)
-  - [Analysis](#Analysis)
+  - [Analysis and Surveys](#Analysis%20and%20Surveys)
   - [Early works](#Early%20works) - [2017](#2017) - [2018](#2018) - [2019](#2019) - [2020](#2020) - [2021](#2021)
 
 <br/>
@@ -433,11 +433,14 @@ Markdown format:
 
 <br/>
 
-## Analysis papers
+## Analysis and Surveys
 |ID| Model | Venue | Title | Authors  | Code  |
 | :---: | :---: | :--- | --- | ---------- | :---: |
 |-  |`--`  | `BMVC 2020` | [Uncovering Hidden Challenges in Query-Based Video Moment Retrieval](https://arxiv.org/pdf/2009.00325.pdf) | Otani et al | 
 |-  |`--`  | `ArXiv 2020`  | [A Closer Look at Temporal Sentence Grounding in Videos: Datasets and Metrics](https://arxiv.org/pdf/2101.09028.pdf) | Yuan et al | [GitHub](https://github.com/yytzsy/grounding_changing_distribution)
+|-  |`--`  | `ArXiv 2021` | [A Survey on Temporal Sentence Grounding in Videos](https://arxiv.org/pdf/2109.08039.pdf) | LAN et al | 
+|-  |`--`  | `ArXiv 2022` | [he Elements of Temporal Sentence Grounding in Videos: A Survey and Future Directions](https://arxiv.org/pdf/2201.08071.pdf) | Zhang et al | 
+
 
 <br/>
 
