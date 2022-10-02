@@ -1,4 +1,5 @@
-# Awesome-Spatio-Temporal-Sentence-Grounding-in-Videos[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome-Spatio-Temporal-Sentence-Grounding-in-Videos
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 <p valign="middle"> <p align="center">  
   <img width="250" src="https://camo.githubusercontent.com/1131548cf666e1150ebd2a52f44776d539f06324/68747470733a2f2f63646e2e7261776769742e636f6d2f73696e647265736f726875732f617765736f6d652f6d61737465722f6d656469612f6c6f676f2e737667" "Awesome!">
@@ -18,8 +19,8 @@ This task is the updated version of temporal sentence grounding where the object
 # 00 - Table of Contents
 
 * [01 - Datasets](#01%20-%20Datasets)
-* [02 - Benchmark Results](#02%20-%20Benchmark%20Results)
-* [03 - Papers](#03%20-%20Papers)
+<!-- * [02 - Benchmark Results](#02%20-%20Benchmark%20Results) -->
+* [02 - Papers](#03%20-%20Papers)
 
 <br/>
 
@@ -401,7 +402,35 @@ Markdown format:
 
 <br/>
 
-## Analysis and Surveys
+## 2022
+
+|ID| Model | Venue | Title | Authors | Code  |
+| :---: | :--- | :--- | --- | ---------- | :---: |
+|1| `TubeDETR` | `CVPR`| [TubeDETR: Spatio-Temporal Video Grounding with Transformers](https://arxiv.org/abs/2203.16434) | Yang et al | [GitHub](https://github.com/antoyang/TubeDETR)
+|2| `--` | `ArXiv`| [Embracing Consistency: A One-Stage Approach for Spatio-Temporal Video Grounding](https://arxiv.org/pdf/2209.13306.pdf) | Jin et al | 
+|3| `--` | `ArXiv`| [GAUSSIAN KERNEL-BASED CROSS MODAL NETWORK FOR SPATIO-TEMPORAL VIDEO GROUNDING](https://arxiv.org/pdf/2207.00744.pdf) | Xiong et al | 
+
+
+
+## 2021
+
+|ID| Model | Venue | Title | Authors | Code  |
+| :---: | :--- | :--- | --- | ---------- | :---: |
+|4| `STVBert` | `ICCV`| [STVGBert: A Visual-linguistic Transformer based Framework for Spatio-temporal Video Grounding](https://openaccess.thecvf.com/content/ICCV2021/papers/Yang_SAT_2D_Semantics_Assisted_Training_for_3D_Visual_Grounding_ICCV_2021_paper.pdf) | Su et al | 
+
+
+## 2020
+
+|ID| Model | Venue | Title | Authors | Code  |
+| :---: | :--- | :--- | --- | ---------- | :---: |
+|5| `Where Does It Exist` | `CVPR`| [Where Does It Exist: Spatio-Temporal Video Grounding for Multi-Form Sentences](https://arxiv.org/abs/2001.06891) | Zhang et al | [GitHub](https://github.com/Guaranteer/VidSTG-Dataset)
+|6| `--` | `IEEE TCSVT`| [Human-centric Spatio-Temporal Video Grounding With Visual Transformers](https://arxiv.org/abs/2201.02848) | Tang et al | [GitHub](https://github.com/tzhhhh123/HC-STVG)
+|7| `--` | `IJCAI`| [Object-Aware Multi-Branch Relation Networks for Spatio-Temporal Video Grounding](https://www.ijcai.org/proceedings/2020/0149.pdf) | Zhang et al |
+
+
+
+
+<!-- ## Analysis and Surveys
 |ID| Model | Venue | Title | Authors  | Code  |
 | :---: | :---: | :--- | --- | ---------- | :---: |
 |-  |`--`  | `BMVC 2020` | [Uncovering Hidden Challenges in Query-Based Video Moment Retrieval](https://arxiv.org/pdf/2009.00325.pdf) | Otani et al | 
@@ -566,30 +595,7 @@ Markdown format:
 |113| `MGSL-Net` | `Arxiv`| [Memory-Guided Semantic Learning Network for Temporal Sentence Grounding](https://arxiv.org/abs/2112.04154) | Liu et al |
 |114| `MMFA-CF` | `IWACIII`| [A Multi-modal Fusion Algorithm for Cross-modal Video Moment Retrieval](https://iwaciii2021.bit.edu.cn/docs/2021-12/3b1c30349c854e168ea5814eef11ac3c.pdf) | Jia et al | 
 
-<br/>
-
-## 2022
-
-|ID| Model | Venue | Title | Authors | Code  |
-| :---: | :--- | :--- | --- | ---------- | :---: |
-|115| `MARN` | `Arxiv`| [Exploring Motion and Appearance Information for Temporal Sentence Grounding](https://arxiv.org/abs/2201.00457) | Liu et al |
-|116| `DebiasTLL` | `Arxiv`| [Learning Sample Importance for Cross-Scenario Video Temporal Grounding](https://arxiv.org/abs/2201.02848) | Bao et al |
-|117| `DebiasTLL` | `Journal`| [Video Moment Retrieval With Cross-Modal Neural Architecture Search](https://pubmed.ncbi.nlm.nih.gov/35015640/) | Yang et al | [GitHub](https://github.com/Xun-Yang/VMR-CMAS)
-|118| `CDN` | `Journal`| [Cross-modal Dynamic Networks for Video Moment Retrieval with Text Query](https://ieeexplore.ieee.org/document/9681153) | Yang et al | [GitHub](https://github.com/Xun-Yang/VMR-CMAS)
-|119| `CDN` | `AAAI`| [Unsupervised Temporal Video Grounding with Deep Semantic Clustering](https://www.aaai.org/AAAI22Papers/AAAI-110.LiuD.pdf) | Liu et al | 
-|120| `APGN` | `ACL`| [Adaptive Proposal Generation Network for Temporal Sentence Localization in Videos](https://aclanthology.org/2021.emnlp-main.732.pdf) | Liu et al |
-|121| `PLRN` | `AVSS`| [Position-aware Location Regression Network for Temporal Video Grounding](https://ieeexplore.ieee.org/document/9663815) | Kim et al |
-|122| `PRVG` | `Arxiv`| [End-to-End Dense Video Grounding via Parallel Regression](https://arxiv.org/abs/2109.11265) | Shi et al |
-|123| `MQEI` | `Journal`| [Multi-Level Query Interaction for Temporal Language Grounding](https://ieeexplore.ieee.org/document/9543470) | Tang et al |
-|124| `LocFormer` | `Arxiv`| [LocFormer: Enabling Transformers to Perform Temporal Moment Localization on Long Untrimmed Videos With a Feature Sampling Approach](https://arxiv.org/abs/2112.10066) | Rodriguez-Opazo et al |
-|125| `STCM-Net` | `Journal`| [STCM-Net: A symmetrical one-stage network for temporal language localization in videos](https://www.sciencedirect.com/science/article/pii/S0925231221016945) | Jia et al |
-|126| `TACI` | `Journal`| [Learning to combine the modalities of language and video for temporal moment localization](https://www.sciencedirect.com/science/article/pii/S1077314222000145) | Shin et al |
-|127| `--` | `Arxiv`| [Multi-Scale Self-Contrastive Learning with Hard Negative Mining for Weakly-Supervised Query-based Video Grounding](https://arxiv.org/abs/2203.03838) | Mo et al |
-|128| `MA3SRN` | `Arxiv`| [Exploring Optical-Flow-Guided Motion and Detection-Based Appearance for Temporal Sentence Grounding](https://arxiv.org/abs/2203.02966) | Liu et al |
-|129| `--` | `AAAI`| [Explore Inter-Contrast Between Videos via Composition for Weakly Supervised Temporal Sentence Grounding](https://www.aaai.org/AAAI22Papers/AAAI-2108.ChenJ.pdf) | Chen et al |
-|130| `--` | `CVPR`| [MAD: A Scalable Dataset for Language Grounding in Videos from Movie Audio Descriptions](https://arxiv.org/abs/2112.00431) | Soldan et al | [GitHub](https://github.com/Soldelli/MAD)
-|131| `--` | `Arxiv`| [Compositional Temporal Grounding with Structured Variational Cross-Graph Correspondence Learning](https://www.aaai.org/AAAI22Papers/AAAI-2108.ChenJ.pdf) | Li et al | [GitHub](https://github.com/YYJMJC/Compositional-Temporal-Grounding)
-
+<br/> -->
 
 
 
