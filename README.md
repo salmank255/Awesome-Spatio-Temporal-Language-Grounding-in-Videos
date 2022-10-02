@@ -15,7 +15,7 @@ This task is the updated version of temporal sentence grounding where the object
 
  b-d) Represent a high-level overview of common multi-modality interaction schemes investigated in the literature. 
 
-  <div align="center" valign="middle"><img height="300px" src="https://drive.google.com/uc?export=view&id=1OsY4636sI8hRoJOhSSJ-kJzecr7GUc4C"></div>
+  <div align="center" valign="middle"><img height="300px" src="figs/pd.png"></div>
 
 <br/>
 
