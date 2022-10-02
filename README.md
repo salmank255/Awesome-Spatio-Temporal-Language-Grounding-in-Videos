@@ -11,11 +11,7 @@ This task is the updated version of temporal sentence grounding where the object
 
 ## Task definition:
 
- a) Given an untrimmed video and a language query, the video grounding task aims to localize a temporal moment (t<sub>s</sub>,t<sub>e</sub>) in the video that matches the query.
-
- b-d) Represent a high-level overview of common multi-modality interaction schemes investigated in the literature. 
-
-  <div align="center" valign="middle"><img height="300px" src="figs/pd.png"></div>
+  <div align="center" valign="middle"><img height="500px" src="figs/pd.png"></div>
 
 <br/>
 
@@ -24,8 +20,6 @@ This task is the updated version of temporal sentence grounding where the object
 * [01 - Datasets](#01%20-%20Datasets)
 * [02 - Benchmark Results](#02%20-%20Benchmark%20Results)
 * [03 - Papers](#03%20-%20Papers)
-  - [Analysis and Surveys](#Analysis%20and%20Surveys)
-  - [Early works](#Early%20works) - [2017](#2017) - [2018](#2018) - [2019](#2019) - [2020](#2020) - [2021](#2021)
 
 <br/>
 
@@ -46,70 +40,47 @@ This task is the updated version of temporal sentence grounding where the object
     </colgroup>
   <tr>
     <td> <p valign="middle"> <p align="left">     Dataset         </p></p></td>
-    <td> <p valign="middle"> <p align="center">   Features<br/>(Download) </p></p></td>
     <td colspan="3"> <p valign="middle"> <p align="center">  Number of Videos </p></p></td>
-    <td> <p valign="middle"> <p align="center">   Avg.<br/>Duration </p></p></td>
-    <td> <p valign="middle"> <p align="center">   Total<br/>Duration </p></p></td>
+    <td> <p valign="middle"> <p align="center">   Avg. Query<br/>Duration </p></p></td>
+    <td> <p valign="middle"> <p align="center">   Avg. Video<br/>Duration </p></p></td>
   </tr>
   <tr>
-    <td></td>
     <td></td>
     <td> <p valign="middle"> <p align="center"> Train   </p></p></td>
     <td> <p valign="middle"> <p align="center"> Val     </p></p></td>
     <td> <p valign="middle"> <p align="center"> Test    </p></p></td>
-    <td><p valign="middle"> <p align="center">  Minutes </p></p></td>
-    <td><p valign="middle"> <p align="center">  Hours   </p></p></td>
+    <td><p valign="middle"> <p align="center">  Sec. </p></p></td>
+    <td><p valign="middle"> <p align="center">  Sec.   </p></p></td>
   </tr>
   <tr>
-    <td> <p valign="middle"> <p align="left">   <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">TACoS</a>              </p></p></td>
-    <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1Hpc-rJKAfNRxIkR30KLHFoyJbUEzJaK_/view?usp=sharing">C3D</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 75    </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 27    </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 25    </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 4.78  </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 10.1  </p></p></td>
+    <td> <p valign="middle"> <p align="left">   <a href="http://www.coli.uni-saarland.de/projects/smile/page.php?id=software">VidSTG</a>              </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 7000    </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 835    </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1265   </p></p></td>
+    <td> <p valign="middle"> <p align="center">  declarative=11.12 / interrogative=8.98  </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 28.01  </p></p></td>
   </tr>
   <tr>
-    <td> <p valign="middle"> <p align="left">   <a href="https://allenai.org/plato/charades/">Charades-STA</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a><br/><a href="https://drive.google.com/file/d/13Cl87OYnISc8x5FNf7TEplxX2AAJu9jc/view?usp=sharing">I3D (LGI)</a><br/><a href="https://drive.google.com/file/d/17QXZdHVcNqKSYbPuvjib6XgSkEDJarMy/view?usp=sharing">I3D (DRN)</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 5336 </p></p></td>
+    <td> <p valign="middle"> <p align="left">   <a href="https://github.com/tzhhhh123/HC-STVG">HC-STVG</a> </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 4500 </p></p></td>
     <td> <p valign="middle"> <p align="center"> 0    </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 1334 </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 0.50 </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 57.1 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 1160 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 5.37 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 20 </p></p></td>
   </tr>
   <tr>
-    <td> <p valign="middle"> <p align="left">   <a href="https://github.com/LisaAnne/LocalizingMoments">DiDeMo</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1ATtF1LEw6ZBrBZF5z93MKQyukbZKg4FX/view?usp=sharing">VGG16</a> </p></p></td>
+    <td> <p valign="middle"> <p align="left">   <a href="https://github.com/tzhhhh123/HC-STVG">HC-STVG2.0</a> </p></p></td>
     <td> <p valign="middle"> <p align="center"> 8511 </p></p></td>
     <td> <p valign="middle"> <p align="center"> 1094 </p></p></td>
     <td> <p valign="middle"> <p align="center"> 1037 </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 0.50 </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 88.7 </p></p></td>
-  </tr>
-  <tr>
-    <td> <p valign="middle"> <p align="left">   <a href="http://cs.stanford.edu/people/ranjaykrishna/densevid/">ActivityNet Captions</a>             </p></p></td>
-    <td> <p valign="middle"> <p align="center"> <a href="https://drive.google.com/file/d/1HNnP-cAFZlJV3n3ZGTLqWF84VBv4us7M/view?usp=sharing">C3D</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 10009  </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 4917 (val1)<br/>4885(val2) </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 5044   </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 1.96   </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 487.6  </p></p></td>
-  </tr>
-  <tr>
-    <td> <p valign="middle"> <p align="left">   <a href="">MAD</a> </p></p></td>
-    <td> <p valign="middle"> <p align="center"> <a href="">CLIP</a></p></p></td>
-    <td> <p valign="middle"> <p align="center"> 488    </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 50     </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 112    </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 110.77 </p></p></td>
-    <td> <p valign="middle"> <p align="center"> 1207.3 </p></p></td>
+    <td> <p valign="middle"> <p align="center"> - </p></p></td>
+    <td> <p valign="middle"> <p align="center"> 20 </p></p></td>
   </tr>
 </table>
 
-<br/>
+<!-- <br/> -->
 
-## Sentences Statistics
+<!-- ## Sentences Statistics
 
 <table style="table-layout: fixed; margin: 0; padding: 0; ">
   <colgroup>
@@ -183,9 +154,9 @@ This task is the updated version of temporal sentence grounding where the object
   </tr>
 </table>
 
-</br>
+</br> -->
 
-## Language Statistics - (Unique tokens)
+<!-- ## Language Statistics - (Unique tokens)
 
 <table style="table-layout: fixed; margin: 0; padding: 0; ">
   <colgroup>
@@ -242,7 +213,7 @@ This task is the updated version of temporal sentence grounding where the object
 
 
 
-
+<!-- 
 <br/><br/>
 
 # 02 - Benchmark Results
@@ -417,11 +388,11 @@ Hit the paper `ID` to fast-forward to the paper details (link to pdf, venue, yea
 | WSTG          [[61]](#2020)|      ---     | 39.80 | 27.30 | 12.90 |   -   |   -   |   -   | WS
 | LGN           [[64]](#2020)|     VGG16    |   -   | 48.15 | 26.67 |   -   | 86.80 | 53.01 | FS
 | LoGAN         [[69]](#2020)|      C3D     |   -   |  34.68 | 14.54 |   -   | 74.30 | 39.11 | WS
-<!-- | AVMR          [[53]](#2020)|    ResNet    | 77.72 | 54.59 |   -   | 88.92 | 72.78 |   -   | WS -->
+| AVMR          [[53]](#2020)|    ResNet    | 77.72 | 54.59 |   -   | 88.92 | 72.78 |   -   | WS -->
 
 <br/><br/>
 
-# 03 - Papers
+# 02 - Papers
 Markdown format:
 
 ```markdown
