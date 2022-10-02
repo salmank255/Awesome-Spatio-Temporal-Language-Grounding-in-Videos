@@ -407,7 +407,7 @@ Markdown format:
 |ID| Model | Venue | Title | Authors | Code  |
 | :---: | :--- | :--- | --- | ---------- | :---: |
 |1| `TubeDETR` | `CVPR`| [TubeDETR: Spatio-Temporal Video Grounding with Transformers](https://arxiv.org/abs/2203.16434) | Yang et al | [GitHub](https://github.com/antoyang/TubeDETR)
-|2| `--` | `ArXiv`| [Embracing Consistency: A One-Stage Approach for Spatio-Temporal Video Grounding](https://arxiv.org/pdf/2209.13306.pdf) | Jin et al | 
+|2| `--` | `NeurIPS`| [Embracing Consistency: A One-Stage Approach for Spatio-Temporal Video Grounding](https://arxiv.org/pdf/2209.13306.pdf) | Jin et al | 
 |3| `--` | `ArXiv`| [GAUSSIAN KERNEL-BASED CROSS MODAL NETWORK FOR SPATIO-TEMPORAL VIDEO GROUNDING](https://arxiv.org/pdf/2207.00744.pdf) | Xiong et al | 
 
 
