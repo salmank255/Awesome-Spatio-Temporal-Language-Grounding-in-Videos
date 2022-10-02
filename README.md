@@ -57,7 +57,7 @@ This task is the updated version of temporal sentence grounding where the object
     <td> <p valign="middle"> <p align="center"> 7000    </p></p></td>
     <td> <p valign="middle"> <p align="center"> 835    </p></p></td>
     <td> <p valign="middle"> <p align="center"> 1265   </p></p></td>
-    <td> <p valign="middle"> <p align="center">  declarative=11.12 / interrogative=8.98  </p></p></td>
+    <td> <p valign="middle"> <p align="center">  declarative=11.12 <br/> interrogative=8.98  </p></p></td>
     <td> <p valign="middle"> <p align="center"> 28.01  </p></p></td>
   </tr>
   <tr>
